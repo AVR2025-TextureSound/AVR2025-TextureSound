@@ -119,7 +119,7 @@ Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar. <br/>
 - Lichtintensität nimmt mit Entfernung und seitlichem Abstand vom Zentrum ab.
 - **Beispiel:** <br/>Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 
-**Link:** https://www.youtube.com/watch?v=upEt2kQ10fM
+**Link:** Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS) https://www.youtube.com/watch?v=upEt2kQ10fM
 
 ## Sound (S. 103)<br/> 
 Nutzung von Klängen, um Immersion zu fördern, Orientierung zu erleichtern und Emotionen zu verstärken. Sound ist ein essenzieller Bestandteil, um virtuelle Umgebungen realistischer und interaktiver zu gestalten.
