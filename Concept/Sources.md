@@ -37,9 +37,6 @@ Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.<br/>
 Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.<br/> 
 **Link:** [Creating Physically Based Materials - Unity Learn](https://learn.unity.com/tutorial/creating-physically-based-materials#)
 
-Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.<br/> 
-**Link:** [Experimentieren mit Shader Graph: Mit weniger mehr erreichen](https://unity.com/de/blog/engine-platform/experimenting-with-shader-graph-doing-more-with-less)
-
 ## Erscheinungsbild Texturen (S.93)<br/> 
 “Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”<br/>  
 
@@ -61,6 +58,8 @@ Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle 
 - Displacement-Mapping auf Basis eines Vertex-Shaders
 - Bump-Mapping auf Basis eines Fragment-Shaders
 
+Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.<br/> 
+**Link:** [Experimentieren mit Shader Graph: Mit weniger mehr erreichen](https://unity.com/de/blog/engine-platform/experimenting-with-shader-graph-doing-more-with-less)
 
 ## Optimierungstechniken für 3D-Objekte (S.95)<br/> 
 Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
