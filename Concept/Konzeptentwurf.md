@@ -13,7 +13,7 @@ Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren g
 2. Sinne im Zusammenspiel: Die Sinne sind eng miteinander verknüpft. Ein Geräusch kann beispielsweise die Wahrnehmung einer Textur verändern. Dieses Zusammenspiel wird als crossmodal perception bezeichnet.
 3. Kontext: Die gleiche Information wird in verschiedenen Kontexten unterschiedlich wahrgenommen. Ein Geräusch, das in einem ruhigen Raum angenehm ist, kann in einer lärmigen Umgebung störend wirken.
 
----
+
 
 ## Hintergrund: Multisensorische Wahrnehmung in VR
 
@@ -25,7 +25,7 @@ Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren g
 
 Diese Faktoren unterstreichen die Bedeutung eines sorgfältig abgestimmten multisensorischen Designs in VR.
 
----
+
 
 ## Ziel und Zweck
 
@@ -46,6 +46,18 @@ Ermittlung, welche Reize am stärksten zur differenzierten Wahrnehmung beitragen
 ---
 
 ## Technische Umsetzung
+
+Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
+
+- **Modellierung:** Erstellung von Oberflächen- und Festkörpermodellen in **Blender**.
+- **Texturierung:** Einsatz von Texturen für realistische Oberflächen (z. B. Bump-, Normal- oder Displacement-Maps).
+- **Shader:** Anwendung von Physically Based Rendering (PBR) im Unity-Editor zur realistischen Lichtsimulation.
+
+**Workflow:**
+1. Modellierung und Texturierung in Blender
+2. Export als `.fbx` oder `.glb`
+3. Import in Unity
+4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
 
 ### 1. 3D-Objekt-Erstellung
 
@@ -89,7 +101,7 @@ Verändert die tatsächliche Geometrie des Objekts, wodurch auch die Silhouette 
 Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermöglicht deren Anwendung sowohl im Materialsystem als auch direkt auf der Geometrie.
 [Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))
 
-Erscheinungsbild Shader (S.94)
+### Erscheinungsbild Shader (S.94)
 Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
 
 ## Beispiele der Realisierung:
@@ -146,8 +158,17 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 - Zustandsautomat: Entspannt → [Drücken] → Komprimiert / Komprimiert → [Loslassen] → Entspannt
 
 ## Beleuchtung (S.102)
+
 Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
 
+**Geplante Beleuchtungin unserem Projekt**
+- Directional Light (Sonne)
+- Point Light (Lampe)
+- Spot Light (Scheinwerfer)
+
+> Link: [Create 3D Sound Effects – Unity](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
+
+## Theoretische Grundlage:
 ### Direktionales Licht (engl. Directional Light)
 - Simuliert Sonnen- oder Mondlicht
 - Beleuchtet alle Objekte aus einer Richtung, unabhängig von deren Entfernung.
@@ -171,6 +192,12 @@ Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 
 ## Sound (S. 103)
 
+**Geplante Soundgestaltung in unserem Projekt:**
+- Glas: Klirren
+- Holz: Knacken
+- Schwamm: Quietschen
+
+## Theoretische Grundlage:
 ### Sound (S. 103)
 Nutzung von Klängen, um Immersion zu fördern, Orientierung zu erleichtern und Emotionen zu verstärken. Sound ist ein essenzieller Bestandteil, um virtuelle Umgebungen realistischer und interaktiver zu gestalten.
 
@@ -186,28 +213,13 @@ Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
 [Create 3D Sound Effects – Unity Learn](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
 
 
----
-
-
-Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
-
-- **Modellierung:** Erstellung von Oberflächen- und Festkörpermodellen in **Blender**.
-- **Texturierung:** Einsatz von Texturen für realistische Oberflächen (z. B. Bump-, Normal- oder Displacement-Maps).
-- **Shader:** Anwendung von Physically Based Rendering (PBR) im Unity-Editor zur realistischen Lichtsimulation.
-
-**Workflow:**
-1. Modellierung und Texturierung in Blender
-2. Export als `.fbx` oder `.glb`
-3. Import in Unity
-4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
-
 **Vertiefung:**
 - [Blender Material Einführung](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - [Unity Creating Physically Based Materials](https://learn.unity.com/tutorial/creating-pbr-materials)
 
----
 
-### 2. Materialien, Interaktionen und Feedback
+
+### Geplante Materialien, Interaktionen und Feedback in unserem Projekt
 
 **Materialien:**
 - Glatt: Glas, Metall
@@ -222,9 +234,9 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 - **Haptisch:** Vibrationsfeedback (einfach vs. komplex) via Unity XR Toolkit und Meta Haptics Studio (vgl. Dörner et al., 2013, S. 212)
 - **Auditiv:** materialspezifische Sounds (z. B. Klirren, Knirschen, dumpfe Töne)
 - **Visuell:** Texturwechsel, Aufleuchten, Partikeleffekte
----
 
-### 3. Performanceoptimierung
+
+### Performanceoptimierung
 
 Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 
@@ -233,23 +245,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 - **Texture Baking**
 - **Billboards**
 
----
 
-### 4. Beleuchtung und Sound
-
-**Beleuchtung:**
-- Directional Light (Sonne)
-- Point Light (Lampe)
-- Spot Light (Scheinwerfer)
-
-**Soundgestaltung:**
-- Glas: Klirren
-- Holz: Knacken
-- Schwamm: Quietschen
-
-> Link: [Create 3D Sound Effects – Unity](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
-
----
 
 ## Interaktionsdesign & UX
 
