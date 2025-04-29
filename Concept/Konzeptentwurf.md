@@ -90,12 +90,12 @@ Beispiele:
 Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
 [Creating Physically Based Materials – Unity Learn](https://learn.unity.com/tutorial/creating-pbr-materials)
 
-### Erscheinungsbild Texturen (S.93)
+## Erscheinungsbild Texturen (S.93)
 “Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
 
 <br>
 
-## Realistische Oberflächenstrukturen lassen sich durch folgende Verfahren erzeugen:
+**Realistische Oberflächenstrukturen lassen sich durch folgende Verfahren erzeugen:**
 
 ### Bump-Mapping:
 Simuliert Unebenheiten durch Licht- und Schatteneffekte, ohne die Geometrie des Objekts zu verändern.
