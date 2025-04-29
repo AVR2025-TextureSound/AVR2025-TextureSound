@@ -221,7 +221,7 @@ Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
 
 <br>
 
-## Geplante Materialien, Interaktionen und Feedback in unserem Projekt
+## Materialien, Interaktionen und Feedback
 
 ### Materialien:
 - Glatt: Glas, Metall
