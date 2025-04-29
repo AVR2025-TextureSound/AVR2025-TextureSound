@@ -63,12 +63,12 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 
 ## 3D-Objekt-Erstellung
 
-3D-Objekte (S. 86)
+### 3D-Objekte (S. 86)
 Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
-Oberflächenmodelle: beschreiben die äußere Hülle (engl. Surfaces) eines Objekts
-Festkörpermodelle: (engl. Solids) beschreiben das Volumen eines Objekts.
+- Oberflächenmodelle: beschreiben die äußere Hülle (engl. Surfaces) eines Objekts
+- Festkörpermodelle: (engl. Solids) beschreiben das Volumen eines Objekts.
 
-Beispiele:
+### Beispiele:
 
 - Ein Glas wird als hohles Polygonnetz modelliert (z. B. Zylinder mit extrudiertem Inneren). [Glas-Material in Blender 2.8 erstellen – Tutorial 03](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
@@ -178,13 +178,13 @@ Glasobjekte reflektieren und brechen das Sonnenlicht konsistent; Holz und Schwam
 - lokale Lichtquellen wie Lampen, Kerzen oder Glühbirnen
 - Lichtquelle befindet sich an einem Punkt im Raum und strahlt in alle Richtungen ab.
 - Die Lichtintensität nimmt mit der Entfernung ab (inverse quadratische Abschwächung).
-- *Beispiel:*
+- **Beispiel:**
 Ein Glasobjekt nahe einer Lampe wirft Lichtreflexe und Schatten auf die Umgebung
 
 ### Scheinwerferlicht (engl. Spot Light)
 - Lichtquelle mit definierter Richtung und Kegelwinkel (Lichtkegel)
 - Lichtintensität nimmt mit Entfernung und seitlichem Abstand vom Zentrum ab.
-- *Beispiel:*
+- **Beispiel:**
 Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 [Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS)](https://www.youtube.com/watch?v=upEt2kQ10fM)
 
