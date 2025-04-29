@@ -1,4 +1,5 @@
 # TextureSound: Multisensorische Wahrnehmung von identischen VR-Exponaten
+
 ## Einleitung
 
 In immersiven VR-Umgebungen spielt die Kombination aus visuellen, auditiven und haptischen Reizen eine zentrale Rolle für das Nutzererlebnis. Dieses Projekt untersucht, wie sich geometrisch identische VR-Objekte (z. B. Holz oder Stein) in ihrer Wahrnehmung unterscheiden, wenn sie unterschiedlich modelliert, vertont und mit haptischem Feedback versehen sind. Das Projekt ist eingebettet in das Seminar Augmented and Virtual Reality (SS 2025) und basiert auf den Grundlagen aus Dörner et al. (vgl. Kapitel 2.3 Multisensorische Wahrnehmung, S. 53) sowie dem Teamkonzept von AVR2025-TextureSound.
@@ -8,35 +9,9 @@ Die Wahrnehmung von Objekten und deren Eigenschaften ist ein komplexer Prozess, 
 ### Wieso nehmen Menschen Dinge unterschiedlich wahr?
 
 Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren gefiltert, darunter:
-
-Kognitive Verzerrungen: Unsere Wahrnehmung wird durch persönliche Erfahrungen, kulturelle Hintergründe und emotionale Zustände beeinflusst. So kann eine Person ein Material als glatt empfinden, während eine andere es als rau wahrnimmt.
-Sinne im Zusammenspiel: Die Sinne sind eng miteinander verknüpft. Ein Geräusch kann beispielsweise die Wahrnehmung einer Textur verändern. Dieses Zusammenspiel wird als crossmodal perception bezeichnet.
-Kontext: Die gleiche Information wird in verschiedenen Kontexten unterschiedlich wahrgenommen. Ein Geräusch, das in einem ruhigen Raum angenehm ist, kann in einer lärmigen Umgebung störend wirken.
-
-## Ziel und Zweck
-### Ziel
-
-Erforschung der Wirkung von Haptik-Komplexität, Klang und Textur auf die Wahrnehmung und Immersion in VR (vgl. Dörner et al., Kapitel 2.3.1 Auditive Wahrnehmung, S. 53; Kapitel 2.3.2 Haptische Wahrnehmung, S. 54). Ziel ist es, zu verstehen, wie das Zusammenspiel dieser Sinneseindrücke das Erlebnis in einer VR-Umgebung beeinflusst und welche Erkenntnisse daraus für das Design von immersiven, realistischen Erlebnissen gewonnen werden können.
-
-### Zweck
-
-Ermittlung, wie realistisch Materialien in VR erlebbar sind und welche Reize am stärksten zur multisensorischen Differenzierung beitragen.
-
-### Zielgruppe
-
-- Studierende im Bereich UX/HCI
-- VR-Designer:innen
-- Forschende im Bereich Wahrnehmung
-
-# TextureSound: Multisensorische Wahrnehmung von identischen VR-Exponaten
-
-## Einleitung
-
-In immersiven Virtual-Reality-Umgebungen spielt die Kombination aus visuellen, auditiven und haptischen Reizen eine zentrale Rolle für das Nutzererlebnis. Dieses Projekt untersucht, wie sich geometrisch identische VR-Objekte (z. B. Holz, Stein) in ihrer Wahrnehmung unterscheiden, wenn sie unterschiedlich modelliert, vertont und mit haptischem Feedback versehen sind.
-
-Die Arbeit basiert auf den Grundlagen aus *Dörner et al., Virtual und Augmented Reality (2. Auflage, 2013)* und dem Teamkonzept von *AVR2025-TextureSound*.
-
-Die Wahrnehmung von Objekten ist ein multisensorischer Prozess, der durch Sinnesüberlagerungen, kognitive Verzerrungen und Kontextfaktoren beeinflusst wird. Besonders in VR ergeben sich neue Chancen, wie wir die Welt erleben und gestalten.
+1. Kognitive Verzerrungen: Unsere Wahrnehmung wird durch persönliche Erfahrungen, kulturelle Hintergründe und emotionale Zustände beeinflusst. So kann eine Person ein Material als glatt empfinden, während eine andere es als rau wahrnimmt.
+2. Sinne im Zusammenspiel: Die Sinne sind eng miteinander verknüpft. Ein Geräusch kann beispielsweise die Wahrnehmung einer Textur verändern. Dieses Zusammenspiel wird als crossmodal perception bezeichnet.
+3. Kontext: Die gleiche Information wird in verschiedenen Kontexten unterschiedlich wahrgenommen. Ein Geräusch, das in einem ruhigen Raum angenehm ist, kann in einer lärmigen Umgebung störend wirken.
 
 ---
 
@@ -56,7 +31,7 @@ Diese Faktoren unterstreichen die Bedeutung eines sorgfältig abgestimmten multi
 
 ### Ziel
 
-Erforschung der Wirkung von Haptik-Komplexität, Klang und Textur auf die Materialwahrnehmung und Immersion in VR (vgl. Dörner et al., Kapitel 2.3).
+Erforschung der Wirkung von Haptik-Komplexität, Klang und Textur auf die Wahrnehmung und Immersion in VR (vgl. Dörner et al., Kapitel 2.3.1 Auditive Wahrnehmung, S. 53; Kapitel 2.3.2 Haptische Wahrnehmung, S. 54). Ziel ist es, zu verstehen, wie das Zusammenspiel dieser Sinneseindrücke das Erlebnis in einer VR-Umgebung beeinflusst und welche Erkenntnisse daraus für das Design von immersiven, realistischen Erlebnissen gewonnen werden können.
 
 ### Zweck
 
@@ -74,19 +49,150 @@ Ermittlung, welche Reize am stärksten zur differenzierten Wahrnehmung beitragen
 
 ### 1. 3D-Objekt-Erstellung
 
+3D-Objekte (S. 86)
+Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
+Oberflächenmodelle: beschreiben die äußere Hülle (engl. Surfaces) eines Objekts
+Festkörpermodelle: (engl. Solids) beschreiben das Volumen eines Objekts.
+
+Beispiele:
+
+Ein Glas wird als hohles Polygonnetz modelliert (z. B. Zylinder mit extrudiertem Inneren).
+Link: Glas-Material in Blender 2.8 erstellen - Tutorial 03
+Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
+Ein Holzbrett wird als Triangle Strip dargestellt, das Texturen (Albedo, Normal) nutzt, um Maserungseffekte zu erzeugen.
+Link: Blender 3D Tutorial - Holz zersplittern - Teil 2 (deutsch)
+Erscheinungsbild Materialien (S.90)
+“Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
+
+Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
+Vorteil: Realistische und konsistente Ergebnisse.
+Nachteil: Hoher Rechenaufwand.
+Beleuchtungsmodell von Phong
+Vorteil: Einfach und ressourcenschonend
+Nachteil: Unrealistische Darstellung
+Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
+Link: Creating Physically Based Materials - Unity Learn
+
+Erscheinungsbild Texturen (S.93)
+“Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
+
+Realistische Oberflächenstrukturen lassen sich durch folgende Verfahren erzeugen:
+
+Bump-Mapping:
+Simuliert Unebenheiten durch Licht- und Schatteneffekte, ohne die Geometrie des Objekts zu verändern.
+
+Normal-Mapping:
+Manipuliert die Oberflächennormalen mit Hilfe von RGB-Texturen, was eine realistischere Lichtinteraktion ermöglicht.
+
+Displacement-Mapping:
+Verändert die tatsächliche Geometrie des Objekts, wodurch auch die Silhouette beeinflusst wird und höchste Detailgenauigkeit erreicht wird.
+
+Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermöglicht deren Anwendung sowohl im Materialsystem als auch direkt auf der Geometrie.
+Link: Understanding Bump Maps and Normal Maps in Blender | Blender Render farm
+
+Erscheinungsbild Shader (S.94)
+Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
+
+Beispiele der Realisierung:
+
+Displacement-Mapping auf Basis eines Vertex-Shaders
+Bump-Mapping auf Basis eines Fragment-Shaders
+Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.
+Link: Experimentieren mit Shader Graph: Mit weniger mehr erreichen
+
+Optimierungstechniken für 3D-Objekte (S.95)
+Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
+
+Vereinfachung von Polygonnetzen
+Reduktion der Zahl der Polygone durch Entfernen von Eckpunkten
+Intuitiv an Stellen, an denen die Oberfläche relativ „flach“ ist
+Darstellung unterschiedlicher Detailgrade
+3D-Objekt in mehreren Detailgraden (Level of Detail, LOD) ablegen
+Abhängig von der Distanz zum Betrachter wird durch das VR-System ein geeigneter Detailgrad ausgewählt z.B. durch schrittweise Vereinfachung eines Polygonnetzes
+Texture Baking
+z.B. wird die Farbinformation der beleuchteten Oberfläche eines hochauflösenden 3D-Modells in eine Textur gespeichert
+„gebackene“ Textur wird dann auf die niedrig aufgelöste, polygonreduzierte Modellversion übertragen
+Billboards (dt. Plakatwand)
+sehr einfache Geometrien wie texturierte Vierecke
+z.B. ein Billboard mit einer Textur eines Baumes und transparentem Hintergrund wird verwendet, um ein detailliertes geometrisches Modell des Baumes zu ersetzen -und so Ressourcen zu sparen
+
+Objektverhalten (S. 100)
+Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
+
+Beispiele:
+
+Glas
+Fallen und Zerbrechen
+Zustände: Intakt / Zerbrochen
+Ereignis: Das Glas fällt aus einer bestimmten Höhe auf den Boden
+Umsetzung: Wenn das Glas-Objekt mit dem „Boden“-Objekt kollidiert (OnCollisionEnter in Unity), wird das intakte Glas deaktiviert und ein vorgefertigtes „zerbrochenes Glas“-Modell an derselben Stelle aktiviert
+Zustandsautomat: Intakt → [Kollision mit Boden] → Zerbrochen
+
+Holz
+Aufheben und Ablegen
+Zustände: Liegt auf dem Tisch / Wird gehalten
+Ereignis: Der Nutzer greift das Holzstück (z. B. mit VR-Controller).
+Umsetzung: Beim Drücken des Greif-Buttons wird das Holzstück dem Controller „angeheftet“ (Parenting in Unity). Beim Loslassen wird das Holzstück wieder auf dem Tisch platziert.
+Zustandsautomat: Liegt auf dem Tisch → [Greifen] → Wird gehalten / Wird gehalten → [Loslassen] → Liegt auf dem Tisch
+
+Schwamm
+Drücken und Loslassen
+Zustände: Entspannt / Komprimiert
+Ereignis: Der Nutzer drückt den Schwamm (z. B. mit Trigger-Button).
+Umsetzung: Beim Drücken des Buttons wird die Skalierung des Schwamm-Objekts in einer Achse reduziert (z. B. y-Achse halbieren). Beim Loslassen des Buttons kehrt die Skalierung wieder zur Ausgangsgröße zurück.
+Zustandsautomat: Entspannt → [Drücken] → Komprimiert / Komprimiert → [Loslassen] → Entspannt
+
+Beleuchtung (S.102)
+Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
+
+Direktionales Licht (engl. Directional Light)
+Simuliert Sonnen- oder Mondlicht
+Beleuchtet alle Objekte aus einer Richtung, unabhängig von deren Entfernung.
+Die Lichtintensität nimmt nicht mit der Entfernung ab.
+Beispiel:
+Glasobjekte reflektieren und brechen das Sonnenlicht konsistent; Holz und Schwamm erhalten gleichmäßige Schattierungen, die Materialdetails betonen
+
+Punktlicht (engl. Point Light)
+lokale Lichtquellen wie Lampen, Kerzen oder Glühbirnen
+Lichtquelle befindet sich an einem Punkt im Raum und strahlt in alle Richtungen ab.
+Die Lichtintensität nimmt mit der Entfernung ab (inverse quadratische Abschwächung).
+Beispiel:
+Ein Glasobjekt nahe einer Lampe wirft Lichtreflexe und Schatten auf die Umgebung
+
+Scheinwerferlicht (engl. Spot Light)
+Lichtquelle mit definierter Richtung und Kegelwinkel (Lichtkegel)
+Lichtintensität nimmt mit Entfernung und seitlichem Abstand vom Zentrum ab.
+Beispiel:
+Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
+Link: Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS) https://www.youtube.com/watch?v=upEt2kQ10fM
+
+Sound (S. 103)
+Nutzung von Klängen, um Immersion zu fördern, Orientierung zu erleichtern und Emotionen zu verstärken. Sound ist ein essenzieller Bestandteil, um virtuelle Umgebungen realistischer und interaktiver zu gestalten.
+
+Glas:
+Zerbrechen: Klirren oder Splittern bei Kollision mit hoher Geschwindigkeit
+
+Holz:
+Aufprall: Dumpfes "Knacken" oder "Klopfen", abhängig von Masse und Härte.
+
+Schwamm:
+Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
+
+Link: https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3
+
 Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 
 - **Modellierung:** Erstellung von Oberflächen- und Festkörpermodellen in **Blender**.
-- **Texturierung:** Einsatz von Texturen für realistische Oberflächen.
-- **Shader:** Anwendung von Physically Based Rendering (PBR) im Unity-Editor.
+- **Texturierung:** Einsatz von Texturen für realistische Oberflächen (z. B. Bump-, Normal- oder Displacement-Maps).
+- **Shader:** Anwendung von Physically Based Rendering (PBR) im Unity-Editor zur realistischen Lichtsimulation.
 
 **Workflow:**
-- Modellierung und Texturierung in **Blender**
-- Export als `.fbx` oder `.glb`
-- Import in **Unity**
-- Materialzuweisung mit Unity Standard Shadern
+1. Modellierung und Texturierung in Blender
+2. Export als `.fbx` oder `.glb`
+3. Import in Unity
+4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
 
-**Links zur Vertiefung:**
+**Vertiefung:**
 - [Blender Material Einführung](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - [Unity Creating Physically Based Materials](https://learn.unity.com/tutorial/creating-pbr-materials)
 
@@ -101,13 +207,12 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 
 **Interaktionen:**
 - Greifen, Streichen, Drücken
-- Wechsel zwischen zwei Flächen für direkten Vergleich
+- Wechsel zwischen zwei Flächen zur direkten Vergleichbarkeit
 
 **Feedback:**
-- **Haptisch:** Vibrationsfeedback über Controller
-- **Auditiv:** Materialspezifische Sounds
+- **Haptisch:** Vibrationsfeedback (einfach vs. komplex) via Unity XR Toolkit und Meta Haptics Studio (vgl. Dörner et al., 2013, S. 212)
+- **Auditiv:** materialspezifische Sounds (z. B. Klirren, Knirschen, dumpfe Töne)
 - **Visuell:** Texturwechsel, Aufleuchten, Partikeleffekte
-
 ---
 
 ### 3. Performanceoptimierung
