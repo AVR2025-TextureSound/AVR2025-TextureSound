@@ -80,8 +80,8 @@ Beispiele:
 “Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
 
 ### Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
--**Vorteil:** Realistische und konsistente Ergebnisse.
--**Nachteil:** Hoher Rechenaufwand.
+- **Vorteil:** Realistische und konsistente Ergebnisse.
+- **Nachteil:** Hoher Rechenaufwand.
 
 ### Beleuchtungsmodell von Phong
 - **Vorteil:** Einfach und ressourcenschonend
@@ -294,13 +294,16 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 
 <br>
 
-**Teamaufteilung:**
-**Teamaufteilung:**
-- A: 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1
-- B: 3D-Modellierung & Texturierung (Objekt 1, Szene 2), Verantwortung und Lichtgestaltung Szene 2
-- C: 3D-Modellierung & Texturierung (Objekt 2, Szene 1), Haptik-Feedback, UI/UX-Design
-- D: 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design
-- A, B, C, D: GitHub-Pflege, Dokumentation, Tests
+## Teamaufteilung:
+
+| Person | Aufgaben |
+|--------|----------|
+| A      | 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1 |
+| B      | 3D-Modellierung & Texturierung (Objekt 1, Szene 2), Verantwortung und Lichtgestaltung Szene 2 |
+| C      | 3D-Modellierung & Texturierung (Objekt 2, Szene 1), Haptik-Feedback, UI/UX-Design |
+| D      | 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design |
+| A, B, C, D | GitHub-Pflege, Dokumentation, Tests |
+
 
 <br>
 
