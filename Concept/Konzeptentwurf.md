@@ -174,7 +174,7 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
 ## Beleuchtung (S.102)
 
-Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
+Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar. Das Lichtdesign ist ein integraler Bestandteil der multisensorischen Erfahrung und wird je nach Szene und Materialtyp angepasst. Im Unity erfolgt die Umsetzung mithilfe von Baked Lighting.
 
 **Geplante Beleuchtungin unserem Projekt**
 - Directional Light (Sonne)
