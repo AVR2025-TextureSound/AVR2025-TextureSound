@@ -13,7 +13,7 @@ Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren g
 2. Sinne im Zusammenspiel: Die Sinne sind eng miteinander verknüpft. Ein Geräusch kann beispielsweise die Wahrnehmung einer Textur verändern. Dieses Zusammenspiel wird als crossmodal perception bezeichnet.
 3. Kontext: Die gleiche Information wird in verschiedenen Kontexten unterschiedlich wahrgenommen. Ein Geräusch, das in einem ruhigen Raum angenehm ist, kann in einer lärmigen Umgebung störend wirken.
 
-
+<br>
 
 ## Hintergrund: Multisensorische Wahrnehmung in VR
 
@@ -25,7 +25,7 @@ Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren g
 
 Diese Faktoren unterstreichen die Bedeutung eines sorgfältig abgestimmten multisensorischen Designs in VR.
 
-
+<br>
 
 ## Ziel und Zweck
 
@@ -43,7 +43,7 @@ Ermittlung, welche Reize am stärksten zur differenzierten Wahrnehmung beitragen
 - Forschende im Bereich Wahrnehmungspsychologie
 - Praktiker:innen der VR-Entwicklung
 
----
+<br>
 
 ## Technische Umsetzung
 
@@ -59,6 +59,8 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 3. Import in Unity
 4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
 
+<br>
+
 ## 3D-Objekt-Erstellung
 
 3D-Objekte (S. 86)
@@ -72,6 +74,7 @@ Beispiele:
 - Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
 - Ein Holzbrett wird als Triangle Strip dargestellt, das Texturen (Albedo, Normal) nutzt, um Maserungseffekte zu erzeugen. [Blender 3D Tutorial – Holz zersplittern – Teil 2 (deutsch)](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 
+<br>
 
 ## Erscheinungsbild Materialien (S.90)
 “Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
@@ -90,6 +93,8 @@ Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Bel
 ### Erscheinungsbild Texturen (S.93)
 “Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
 
+<br>
+
 ## Realistische Oberflächenstrukturen lassen sich durch folgende Verfahren erzeugen:
 
 ### Bump-Mapping:
@@ -107,6 +112,8 @@ Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermögli
 ### Erscheinungsbild Shader (S.94)
 Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
 
+<br>
+
 ## Beispiele der Realisierung:
 
 ### Displacement-Mapping auf Basis eines Vertex-Shaders
@@ -114,6 +121,7 @@ Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle 
 Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.
 [Experimentieren mit Shader Graph: Mit weniger mehr erreichen](https://learn.unity.com/tutorial/introduction-to-shader-graph)
 
+<br>
 
 ## Optimierungstechniken für 3D-Objekte (S.95)
 Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
@@ -133,6 +141,8 @@ Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeo
 ### Billboards (dt. Plakatwand)
 - sehr einfache Geometrien wie texturierte Vierecke
 - z.B. ein Billboard mit einer Textur eines Baumes und transparentem Hintergrund wird verwendet, um ein detailliertes geometrisches Modell des Baumes zu ersetzen -und so Ressourcen zu sparen
+
+<br>
 
 ## Objektverhalten (S. 100)
 Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
@@ -160,6 +170,8 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 - Umsetzung: Beim Drücken des Buttons wird die Skalierung des Schwamm-Objekts in einer Achse reduziert (z. B. y-Achse halbieren). Beim Loslassen des Buttons kehrt die - - Skalierung wieder zur Ausgangsgröße zurück.
 - Zustandsautomat: Entspannt → [Drücken] → Komprimiert / Komprimiert → [Loslassen] → Entspannt
 
+<br>
+
 ## Beleuchtung (S.102)
 
 Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
@@ -170,6 +182,8 @@ Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
 - Spot Light (Scheinwerfer)
 
 > Link: [Create 3D Sound Effects – Unity](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
+
+<br>
 
 ## Theoretische Grundlage:
 ### Direktionales Licht (engl. Directional Light)
@@ -193,12 +207,16 @@ Ein Glasobjekt nahe einer Lampe wirft Lichtreflexe und Schatten auf die Umgebung
 Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 [Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS)](https://www.youtube.com/watch?v=upEt2kQ10fM)
 
+<br>
+
 ## Sound (S. 103)
 
 **Geplante Soundgestaltung in unserem Projekt:**
 - Glas: Klirren
 - Holz: Knacken
 - Schwamm: Quietschen
+
+<br>
 
 ## Theoretische Grundlage:
 ### Sound (S. 103)
@@ -220,26 +238,27 @@ Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
 - [Blender Material Einführung](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - [Unity Creating Physically Based Materials](https://learn.unity.com/tutorial/creating-pbr-materials)
 
+<br>
 
+## Geplante Materialien, Interaktionen und Feedback in unserem Projekt
 
-### Geplante Materialien, Interaktionen und Feedback in unserem Projekt
-
-**Materialien:**
+### Materialien:
 - Glatt: Glas, Metall
 - Rau: Holz, Sandpapier
 - Weich (optional): Moos, Stoff
 
-**Interaktionen:**
+### Interaktionen:
 - Greifen, Streichen, Drücken
 - Wechsel zwischen zwei Flächen zur direkten Vergleichbarkeit
 
-**Feedback:**
+### Feedback:
 - **Haptisch:** Vibrationsfeedback (einfach vs. komplex) via Unity XR Toolkit und Meta Haptics Studio (vgl. Dörner et al., 2013, S. 212)
 - **Auditiv:** materialspezifische Sounds (z. B. Klirren, Knirschen, dumpfe Töne)
 - **Visuell:** Texturwechsel, Aufleuchten, Partikeleffekte
 
+<br>
 
-### Performanceoptimierung
+## Performanceoptimierung
 
 Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 
@@ -248,7 +267,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 - **Texture Baking**
 - **Billboards**
 
-
+<br>
 
 ## Interaktionsdesign & UX
 
@@ -261,7 +280,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 - Handtracking optional
 - Controllersteuerung als Standard
 
----
+<br>
 
 ## Projektmanagement
 
@@ -273,6 +292,8 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 | 7–9 | Usability-Tests & Feinschliff | 25.06.2025 |
 | 10 | Abgabe & Abschlusspräsentation | 07.07.2025 |
 
+<br>
+
 **Teamaufteilung:**
 **Teamaufteilung:**
 - A: 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1
@@ -281,7 +302,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 - D: 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design
 - A, B, C, D: GitHub-Pflege, Dokumentation, Tests
 
----
+<br>
 
 ## Risiken & Gegenmaßnahmen
 
@@ -292,7 +313,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 | Unsynchrones Feedback | Exakte Trigger-Logik, Debugging |
 | Zeitverzug | Pufferzeiten einplanen, Fokus auf Kernfunktionen |
 
----
+<br>
 
 ## Wahrnehmungskategorien (Beispiele)
 
@@ -303,7 +324,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 | Metall | glatt, glänzend | metallisch, hell | vibrierend, lang | kalt, industriell |
 | Stoff | weich, diffus | leise, diffus | sanft, kontinuierlich | gemütlich, organisch |
 
----
+<br>
 
 ## Weiterführende Perspektiven
 
@@ -312,7 +333,7 @@ Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
 - Gestaltung multimodaler VR-Erfahrungen für Barrierefreiheit
 - Vertiefung der Cybersickness-Forschung bei inkongruenten Reizen (vgl. Dörner et al., Kapitel 2.4.7)
 
----
+<br>
 
 ## Quellen
 
