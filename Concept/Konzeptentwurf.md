@@ -63,7 +63,7 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 
 ## 3D-Objekt-Erstellung
 
-### 3D-Objekte (S. 86)
+### 3D-Objekte
 Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
 - Oberflächenmodelle: beschreiben die äußere Hülle (engl. Surfaces) eines Objekts
 - Festkörpermodelle: (engl. Solids) beschreiben das Volumen eines Objekts.
@@ -74,9 +74,10 @@ Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
 - Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
 - Ein Holzbrett wird als Triangle Strip dargestellt, das Texturen (Albedo, Normal) nutzt, um Maserungseffekte zu erzeugen. [Blender 3D Tutorial – Holz zersplittern – Teil 2 (deutsch)](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 
+*vgl. Dörner et al., S.86*
 <br>
 
-## Erscheinungsbild Materialien (S.90)
+## Erscheinungsbild Materialien
 “Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
 
 ### Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
@@ -90,9 +91,10 @@ Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
 Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
 [Creating Physically Based Materials – Unity Learn](https://learn.unity.com/tutorial/creating-pbr-materials)
 
+*vgl. Dörner et al., S.90*
 <br>
 
-## Erscheinungsbild Texturen (S.93)
+## Erscheinungsbild Texturen
 “Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
 
 <br>
@@ -111,9 +113,10 @@ Verändert die tatsächliche Geometrie des Objekts, wodurch auch die Silhouette 
 Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermöglicht deren Anwendung sowohl im Materialsystem als auch direkt auf der Geometrie.
 [Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))
 
+*vgl. Dörner et al., S.93*
 <br>
 
-## Erscheinungsbild Shader (S.94)
+## Erscheinungsbild Shader
 Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
 
 **Beispiele der Realisierung:**
@@ -123,9 +126,10 @@ Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle 
 Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.
 [Experimentieren mit Shader Graph: Mit weniger mehr erreichen](https://learn.unity.com/tutorial/introduction-to-shader-graph)
 
+*vgl. Dörner et al., S.94*
 <br>
 
-## Objektverhalten (S. 100)
+## Objektverhalten
 Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
 ### Beispiele:
@@ -151,9 +155,10 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 - Umsetzung: Beim Drücken des Buttons wird die Skalierung des Schwamm-Objekts in einer Achse reduziert (z. B. y-Achse halbieren). Beim Loslassen des Buttons kehrt die - - Skalierung wieder zur Ausgangsgröße zurück.
 - Zustandsautomat: Entspannt → [Drücken] → Komprimiert / Komprimiert → [Loslassen] → Entspannt
 
+*vgl. Dörner et al., S.100*
 <br>
 
-## Beleuchtung (S.102)
+## Beleuchtung
 
 Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar. Das Lichtdesign ist ein integraler Bestandteil der multisensorischen Erfahrung und wird je nach Szene und Materialtyp angepasst. Im Unity erfolgt die Umsetzung mithilfe von Baked Lighting.
 
@@ -163,6 +168,7 @@ Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar. Das Li
 - Spot Light (Scheinwerfer)
 
 > Link: [Create 3D Sound Effects – Unity](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
+
 
 <br>
 
@@ -188,9 +194,10 @@ Ein Glasobjekt nahe einer Lampe wirft Lichtreflexe und Schatten auf die Umgebung
 Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 [Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS)](https://www.youtube.com/watch?v=upEt2kQ10fM)
 
+*vgl. Dörner et al., S.102*
 <br>
 
-## Sound (S. 103)
+## Sound
 
 **Geplante Soundgestaltung in unserem Projekt:**
 - Glas: Klirren
@@ -200,7 +207,7 @@ Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 <br>
 
 ## Theoretische Grundlage:
-### Sound (S. 103)
+### Sound
 Nutzung von Klängen, um Immersion zu fördern, Orientierung zu erleichtern und Emotionen zu verstärken. Sound ist ein essenzieller Bestandteil, um virtuelle Umgebungen realistischer und interaktiver zu gestalten.
 
 ### Glas:
@@ -211,6 +218,8 @@ Aufprall: Dumpfes "Knacken" oder "Klopfen", abhängig von Masse und Härte.
 
 ### Schwamm:
 Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
+
+*vgl. Dörner et al., S.103*
 
 [Create 3D Sound Effects – Unity Learn](https://learn.unity.com/pathway/creative-core/unit/creative-core-audio/tutorial/create-3d-sound-effects-3)
 
@@ -249,7 +258,7 @@ Für die Verbesserung der Rendering-Effizienz in unserer VR-Anwendung setzen wir
 - **Billboards**
 
 ## Theoretische Grundlage:
-### Optimierungstechniken für 3D-Objekte (S.95)
+### Optimierungstechniken für 3D-Objekte
 Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
 
 ### Vereinfachung von Polygonnetzen
@@ -268,6 +277,7 @@ Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeo
 - sehr einfache Geometrien wie texturierte Vierecke
 - z.B. ein Billboard mit einer Textur eines Baumes und transparentem Hintergrund wird verwendet, um ein detailliertes geometrisches Modell des Baumes zu ersetzen -und so Ressourcen zu sparen
 
+*vgl. Dörner et al., S.95*
 <br>
 
 ## Interaktionsdesign & UX
