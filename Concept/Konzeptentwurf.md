@@ -63,12 +63,12 @@ Beispiele:
 “Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
 
 ## Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
-### Vorteil: Realistische und konsistente Ergebnisse.
-### Nachteil: Hoher Rechenaufwand.
+*Vorteil:* Realistische und konsistente Ergebnisse.
+*Nachteil:* Hoher Rechenaufwand.
 
-## Beleuchtungsmodell von Phong
-### Vorteil: Einfach und ressourcenschonend
-### Nachteil: Unrealistische Darstellung
+### Beleuchtungsmodell von Phong
+*Vorteil:* Einfach und ressourcenschonend
+*Nachteil:* Unrealistische Darstellung
 Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
 [Creating Physically Based Materials – Unity Learn](https://learn.unity.com/tutorial/creating-pbr-materials)
 
@@ -152,20 +152,20 @@ Um 3D-Objekte überhaupt sehen zu können, sind Lichtquellen unabdingbar.
 - Simuliert Sonnen- oder Mondlicht
 - Beleuchtet alle Objekte aus einer Richtung, unabhängig von deren Entfernung.
 - Die Lichtintensität nimmt nicht mit der Entfernung ab.
-- ### Beispiel:
+- *Beispiel:*
 Glasobjekte reflektieren und brechen das Sonnenlicht konsistent; Holz und Schwamm erhalten gleichmäßige Schattierungen, die Materialdetails betonen
 
 ### Punktlicht (engl. Point Light)
 - lokale Lichtquellen wie Lampen, Kerzen oder Glühbirnen
 - Lichtquelle befindet sich an einem Punkt im Raum und strahlt in alle Richtungen ab.
 - Die Lichtintensität nimmt mit der Entfernung ab (inverse quadratische Abschwächung).
-- ### Beispiel:
+- *Beispiel:*
 Ein Glasobjekt nahe einer Lampe wirft Lichtreflexe und Schatten auf die Umgebung
 
 ### Scheinwerferlicht (engl. Spot Light)
 - Lichtquelle mit definierter Richtung und Kegelwinkel (Lichtkegel)
 - Lichtintensität nimmt mit Entfernung und seitlichem Abstand vom Zentrum ab.
-- ### Beispiel:
+- *Beispiel:*
 Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 [Unity 3D Lights Tutorial (DIRECTIONAL, SPOT, POINT, AND AREA LIGHTS)](https://www.youtube.com/watch?v=upEt2kQ10fM)
 
