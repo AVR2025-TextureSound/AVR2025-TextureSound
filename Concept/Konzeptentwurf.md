@@ -71,12 +71,14 @@ Beispiele:
 - Ein Glas wird als hohles Polygonnetz modelliert (z. B. Zylinder mit extrudiertem Inneren). [Glas-Material in Blender 2.8 erstellen – Tutorial 03](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
 - Ein Holzbrett wird als Triangle Strip dargestellt, das Texturen (Albedo, Normal) nutzt, um Maserungseffekte zu erzeugen. [Blender 3D Tutorial – Holz zersplittern – Teil 2 (deutsch)](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
-- Erscheinungsbild Materialien (S.90)
+
+
+## Erscheinungsbild Materialien (S.90)
 “Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
 
-## Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
-*Vorteil:* Realistische und konsistente Ergebnisse.
-*Nachteil:* Hoher Rechenaufwand.
+### Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
+-**Vorteil:** Realistische und konsistente Ergebnisse.
+-**Nachteil:** Hoher Rechenaufwand.
 
 ### Beleuchtungsmodell von Phong
 - **Vorteil:** Einfach und ressourcenschonend
