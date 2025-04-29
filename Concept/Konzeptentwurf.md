@@ -111,15 +111,15 @@ Verändert die tatsächliche Geometrie des Objekts, wodurch auch die Silhouette 
 Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermöglicht deren Anwendung sowohl im Materialsystem als auch direkt auf der Geometrie.
 [Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))
 
-### Erscheinungsbild Shader (S.94)
-Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
-
 <br>
 
-## Beispiele der Realisierung:
+## Erscheinungsbild Shader (S.94)
+Shader sind Programme, die auf der GPU ausgeführt werden und für die visuelle Darstellung von 3D-Grafiken verantwortlich sind. Sie berechnen Effekte wie Beleuchtung, Texturierung und Schatten in Echtzeit. Es gibt verschiedene Arten von Shadern, darunter Vertex-Shader, die geometrische Transformationen durchführen, und Fragment-Shader, die die Farbe jedes Pixels bestimmen. Shader sind essentiell für die Erstellung realistischer und interaktiver Grafiken in Spielen und Anwendungen.
 
-### Displacement-Mapping auf Basis eines Vertex-Shaders
-### Bump-Mapping auf Basis eines Fragment-Shaders
+**Beispiele der Realisierung:**
+- Displacement-Mapping auf Basis eines Vertex-Shaders
+- Bump-Mapping auf Basis eines Fragment-Shaders
+  
 Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzustellen, indem sie verschiedene Textur-Maps wie Albedo, Normal, Metallic, Smoothness und Ambient Occlusion nutzen.
 [Experimentieren mit Shader Graph: Mit weniger mehr erreichen](https://learn.unity.com/tutorial/introduction-to-shader-graph)
 
