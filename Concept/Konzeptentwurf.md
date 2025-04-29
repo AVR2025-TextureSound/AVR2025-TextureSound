@@ -125,27 +125,6 @@ Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzus
 
 <br>
 
-## Optimierungstechniken für 3D-Objekte (S.95)
-Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
-
-### Vereinfachung von Polygonnetzen
-- Reduktion der Zahl der Polygone durch Entfernen von Eckpunkten
-- Intuitiv an Stellen, an denen die Oberfläche relativ „flach“ ist
-
-### Darstellung unterschiedlicher Detailgrade
-- 3D-Objekt in mehreren Detailgraden (Level of Detail, LOD) ablegen
-- Abhängig von der Distanz zum Betrachter wird durch das VR-System ein geeigneter Detailgrad ausgewählt z.B. durch schrittweise Vereinfachung eines Polygonnetzes
-
-### Texture Baking
-- z.B. wird die Farbinformation der beleuchteten Oberfläche eines hochauflösenden 3D-Modells in eine Textur gespeichert
-- „gebackene“ Textur wird dann auf die niedrig aufgelöste, polygonreduzierte Modellversion übertragen
-
-### Billboards (dt. Plakatwand)
-- sehr einfache Geometrien wie texturierte Vierecke
-- z.B. ein Billboard mit einer Textur eines Baumes und transparentem Hintergrund wird verwendet, um ein detailliertes geometrisches Modell des Baumes zu ersetzen -und so Ressourcen zu sparen
-
-<br>
-
 ## Objektverhalten (S. 100)
 Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
@@ -262,12 +241,32 @@ Komprimieren: Quietschen oder gedämpftes "Plop" beim Zusammendrücken
 
 ## Performanceoptimierung
 
-Basierend auf *Dörner et al., Optimierungstechniken (S.95)*:
+Für die Verbesserung der Rendering-Effizienz in unserer VR-Anwendung setzen wir folgende Optimierungstechniken ein:
 
 - **Polygonreduktion**
 - **Level of Detail (LOD)**
 - **Texture Baking**
 - **Billboards**
+
+## Theoretische Grundlage:
+### Optimierungstechniken für 3D-Objekte (S.95)
+Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeometrien.
+
+### Vereinfachung von Polygonnetzen
+- Reduktion der Zahl der Polygone durch Entfernen von Eckpunkten
+- Intuitiv an Stellen, an denen die Oberfläche relativ „flach“ ist
+
+### Darstellung unterschiedlicher Detailgrade
+- 3D-Objekt in mehreren Detailgraden (Level of Detail, LOD) ablegen
+- Abhängig von der Distanz zum Betrachter wird durch das VR-System ein geeigneter Detailgrad ausgewählt z.B. durch schrittweise Vereinfachung eines Polygonnetzes
+
+### Texture Baking
+- z.B. wird die Farbinformation der beleuchteten Oberfläche eines hochauflösenden 3D-Modells in eine Textur gespeichert
+- „gebackene“ Textur wird dann auf die niedrig aufgelöste, polygonreduzierte Modellversion übertragen
+
+### Billboards (dt. Plakatwand)
+- sehr einfache Geometrien wie texturierte Vierecke
+- z.B. ein Billboard mit einer Textur eines Baumes und transparentem Hintergrund wird verwendet, um ein detailliertes geometrisches Modell des Baumes zu ersetzen -und so Ressourcen zu sparen
 
 <br>
 
