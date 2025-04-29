@@ -90,6 +90,8 @@ Beispiele:
 Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
 [Creating Physically Based Materials – Unity Learn](https://learn.unity.com/tutorial/creating-pbr-materials)
 
+<br>
+
 ## Erscheinungsbild Texturen (S.93)
 “Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
 
