@@ -59,7 +59,7 @@ Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
 3. Import in Unity
 4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
 
-### 1. 3D-Objekt-Erstellung
+## 3D-Objekt-Erstellung
 
 3D-Objekte (S. 86)
 Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
