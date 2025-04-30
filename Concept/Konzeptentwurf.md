@@ -298,7 +298,7 @@ Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeo
 | Woche | Aufgabe | Termin |
 |:-----|:--------|:------|
 | 1 | Konzept & Tool-Einrichtung | 30.04.2025 |
-| 2–3 | Erste Prototypen in Unity | 14.05.2025 |
+| 2–3 | Erste Prototypen in Unity | 12.05.2025 |
 | 4–6 | Integration von Sound & Haptik | 04.06.2025 |
 | 7–9 | Usability-Tests & Feinschliff | 25.06.2025 |
 | 10 | Abgabe & Abschlusspräsentation | 07.07.2025 |
@@ -307,13 +307,13 @@ Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeo
 
 ## Teamaufteilung:
 
-| Person | Aufgaben |
-|--------|----------|
-| A      | 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1 |
-| B      | 3D-Modellierung & Texturierung (Objekt 1, Szene 2), Verantwortung und Lichtgestaltung Szene 2 |
-| C      | 3D-Modellierung & Texturierung (Objekt 2, Szene 1), Haptik-Feedback, UI/UX-Design |
-| D      | 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design |
-| A, B, C, D | GitHub-Pflege, Dokumentation, Tests |
+| Person         | Aufgaben |
+|----------------|----------|
+| jacque-schu    | 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1 |
+| avr2025-annab  | 3D-Modellierung & Texturierung (Objekt 1, Szene 2), Verantwortung und Lichtgestaltung Szene 2 |
+| frit2x         | 3D-Modellierung & Texturierung (Objekt 2, Szene 1), Haptik-Feedback, UI/UX-Design |
+| verakmr        | 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design |
+| ALLE           | GitHub-Pflege, Dokumentation, Tests |
 
 
 <br>
