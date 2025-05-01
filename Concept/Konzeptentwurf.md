@@ -309,10 +309,10 @@ Verbesserung der Rendering-Effizienz durch die Vereinfachung komplexer Objektgeo
 
 | Person         | Aufgaben |
 |----------------|----------|
-| jacque-schu    | 3D-Modellierung & Texturierung (Objekt 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1 |
-| avr2025-annab  | 3D-Modellierung & Texturierung (Objekt 1, Szene 2), Verantwortung und Lichtgestaltung Szene 2 |
-| frit2x         | 3D-Modellierung & Texturierung (Objekt 2, Szene 1), Haptik-Feedback, UI/UX-Design |
-| verakmr        | 3D-Modellierung & Texturierung (Objekt 2, Szene 2), Sound-Design, UI/UX-Design |
+| jacque-schu    | 3D-Modellierung & Texturierung (Glas 1, Szene 1), Verantwortung und Lichtgestaltung Szene 1 |
+| avr2025-annab  | 3D-Modellierung & Texturierung (Holz, Szene 2), Verantwortung und Lichtgestaltung Szene 2 |
+| frit2x         | 3D-Modellierung & Texturierung (Sandpapier, Szene 1), Haptik-Feedback, UI/UX-Design |
+| verakmr        | 3D-Modellierung & Texturierung (Metall, Szene 2), Sound-Design, UI/UX-Design |
 | ALLE           | GitHub-Pflege, Dokumentation, Tests |
 
 
