@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 151657906}
   - component: {fileID: 151657905}
   - component: {fileID: 151657904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,7 +877,7 @@ GameObject:
   - component: {fileID: 384365073}
   - component: {fileID: 384365072}
   - component: {fileID: 384365071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1110,7 +1110,7 @@ GameObject:
   - component: {fileID: 503938218}
   - component: {fileID: 503938217}
   - component: {fileID: 503938219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.015 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 678756508}
   - component: {fileID: 678756507}
   - component: {fileID: 678756509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2072,7 +2072,7 @@ GameObject:
   - component: {fileID: 772145062}
   - component: {fileID: 772145061}
   - component: {fileID: 772145060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2414,7 +2414,7 @@ GameObject:
   - component: {fileID: 872362916}
   - component: {fileID: 872362915}
   - component: {fileID: 872362919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 897860350}
   - component: {fileID: 897860349}
   - component: {fileID: 897860351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.015 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2920,7 +2920,7 @@ GameObject:
   - component: {fileID: 1072766201}
   - component: {fileID: 1072766200}
   - component: {fileID: 1072766202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3028,7 +3028,7 @@ GameObject:
   - component: {fileID: 1110983587}
   - component: {fileID: 1110983586}
   - component: {fileID: 1110983588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3557,7 +3557,7 @@ GameObject:
   - component: {fileID: 1331059799}
   - component: {fileID: 1331059798}
   - component: {fileID: 1331059800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.013 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4014,7 +4014,7 @@ GameObject:
   - component: {fileID: 1430739955}
   - component: {fileID: 1430739960}
   - component: {fileID: 1430739959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Growth Ring
   m_TagString: Holz
   m_Icon: {fileID: 0}
@@ -4475,7 +4475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494304395}
   - component: {fileID: 1494304396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Woods Elements
   m_TagString: Holz
   m_Icon: {fileID: 0}
@@ -4609,7 +4609,7 @@ GameObject:
   - component: {fileID: 1512289299}
   - component: {fileID: 1512289298}
   - component: {fileID: 1512289300}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4717,7 @@ GameObject:
   - component: {fileID: 1515329038}
   - component: {fileID: 1515329037}
   - component: {fileID: 1515329039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.001 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5169,7 +5169,7 @@ GameObject:
   - component: {fileID: 1704725437}
   - component: {fileID: 1704725439}
   - component: {fileID: 1704725438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timbers
   m_TagString: Holz
   m_Icon: {fileID: 0}
@@ -5369,6 +5369,10 @@ PrefabInstance:
     - target: {fileID: -7029948723529949830, guid: 096474dacd2c54d4ea0a0ce4a6a7d03c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 096474dacd2c54d4ea0a0ce4a6a7d03c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 65702495048144492, guid: 096474dacd2c54d4ea0a0ce4a6a7d03c, type: 3}
       propertyPath: m_IsActive
@@ -5989,7 +5993,7 @@ GameObject:
   - component: {fileID: 1759739028}
   - component: {fileID: 1759739027}
   - component: {fileID: 1759739026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6331,7 +6335,7 @@ GameObject:
   - component: {fileID: 1886250331}
   - component: {fileID: 1886250330}
   - component: {fileID: 1886250329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6812,7 +6816,7 @@ GameObject:
   - component: {fileID: 2000382858}
   - component: {fileID: 2000382857}
   - component: {fileID: 2000382856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6985,6 +6989,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -8143710011712545758, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -6997,6 +7005,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7be9bc30a25e67040b6d175f47bac052, type: 2}
+    - target: {fileID: -7640558969779515294, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7271449666460269675, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -7013,10 +7033,18 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7be9bc30a25e67040b6d175f47bac052, type: 2}
+    - target: {fileID: -2045257923548263128, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1806680513116206669, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7be9bc30a25e67040b6d175f47bac052, type: 2}
+    - target: {fileID: -1599826595754709761, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1461304994638716399, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -7029,9 +7057,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7be9bc30a25e67040b6d175f47bac052, type: 2}
+    - target: {fileID: -516098083770646512, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: m_Name
       value: Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: m_TagString
@@ -7065,9 +7101,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -11.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6014503084441653313, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6830945432629781959, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8567717000986892130, guid: f7ceaf1ce9491e0459dc31a46b37d001, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -7290,7 +7334,7 @@ GameObject:
   - component: {fileID: 2058898870}
   - component: {fileID: 2058898869}
   - component: {fileID: 2058898868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Timber (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7472,7 +7516,7 @@ GameObject:
   - component: {fileID: 2102175702}
   - component: {fileID: 2102175701}
   - component: {fileID: 2102175703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.013 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
