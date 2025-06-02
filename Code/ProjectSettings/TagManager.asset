@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Anchor
   - Flasche
+  - Holz
+  - Glas
+  - Flasche_3
+  - Glas_3
+  - Glas_2
+  - Flasche_2
+  - Glas_1
+  - Flasche_1
   layers:
   - Default
   - TransparentFX
@@ -13,12 +21,12 @@ TagManager:
   - 
   - Water
   - UI
-  - Glas
-  - Flasche
-  - 
-  - 
-  - 
-  - 
+  - Glas_1
+  - Flasche_1
+  - Glas_2
+  - Flasche_2
+  - Glas_3
+  - Flasche_3
   - 
   - 
   - 
