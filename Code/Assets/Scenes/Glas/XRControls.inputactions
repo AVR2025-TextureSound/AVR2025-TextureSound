@@ -1,0 +1,65 @@
+{
+    "name": "XRControls",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "c5f35e7c-d44d-410a-87cf-e672caa35456",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "54e07141-8521-4d95-af6b-720b8feb15c0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grap",
+                    "type": "Button",
+                    "id": "20b34499-242f-4a11-8c5a-d5dc368b8075",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7a3405a4-51ab-4a58-8436-51c4fd0e6fe7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c0c4212b-0422-4329-a0ba-79f05198f48d",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50007740-4677-4ecd-b1cd-284aed1c4219",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

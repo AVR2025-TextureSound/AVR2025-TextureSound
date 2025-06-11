@@ -17,22 +17,22 @@ public class TooltipByMouse : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100f))
         {
             // Prüfe auf Exponat-Tags oder Namen
-            if (hit.collider.CompareTag("Glas_1"))
-            {
+            if (hit.collider.CompareTag("Glas_1") || hit.collider.CompareTag("Flasche_1"))
+                {
                 tooltipPanel.SetActive(true);
-                tooltipText.text = "Dies ist Glas 1. Hier ist die spezifische Beschreibung.";
+                tooltipText.text = "Bewege das Glas gegen die Falsche um einen Sound zu erzeugen.";
                 return;
             }
-            else if (hit.collider.CompareTag("Glas_2"))
+            else if (hit.collider.CompareTag("Glas_2") || hit.collider.CompareTag("Flasche_2"))
             {
                 tooltipPanel.SetActive(true);
-                tooltipText.text = "Dies ist Glas 2. Hier ist die spezifische Beschreibung.";
+                tooltipText.text = "Bewege das blau/grüne Glas gegen die blau/grüne Falsche um einen Sound und eine Vibration zu erzeugen.";
                 return;
             }
-            else if (hit.collider.CompareTag("Glas_3"))
+            else if (hit.collider.CompareTag("Glas_3") || hit.collider.CompareTag("Flasche_3"))
             {
                 tooltipPanel.SetActive(true);
-                tooltipText.text = "Dies ist Glas 3. Hier ist die spezifische Beschreibung.";
+                tooltipText.text = "Bewege das rosa/rötliche Glas gegen die rosa/rötliche Flasche um Scherben zu erzeugen. Es ertönt ein Sound und eine Vibration. Das Glas zerfällt in Scherben.";
                 return;
             }
             // Prüfe, ob der Mauszeiger über dem Bereich vor dem Tisch ist
