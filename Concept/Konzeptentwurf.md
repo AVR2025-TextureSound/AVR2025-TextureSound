@@ -140,35 +140,35 @@ Spart Speicherplatz und Ladezeit, da mehrere Eigenschaften in einer Textur gespe
 
 ### Warum werden diese Texture-Maps verwendet?
 
-Base Color (Albedo): 
+Base Color (Albedo): <br>
 Unverzichtbar für die Grundfarbgebung jedes Materials. Ohne sie wirken Objekte flach und unnatürlich.
 
-Normal Map: 
+Normal Map: <br>
 Fügt Details wie Kratzer, Fugen oder Poren hinzu, ohne das Mesh zu verkomplizieren. Das verbessert die Performance und den Realismus.
 
-Roughness / Smoothness: 
+Roughness / Smoothness: <br>
 Steuert, wie Licht auf der Oberfläche reflektiert wird. Unterschiedliche Werte ermöglichen die Darstellung von matten bis hochglänzenden Materialien.
 
-Metallic Map: 
+Metallic Map: <br>
 Unterscheidet zwischen metallischen und nicht-metallischen Oberflächen. Essenziell für PBR (Physically Based Rendering) und realistische Lichtreflexionen.
 
-Ambient Occlusion: 
+Ambient Occlusion: <br>
 Simuliert weiche Schatten in Vertiefungen, was die räumliche Wirkung und Tiefe verstärkt.
 
-Height/Displacement Map: 
+Height/Displacement Map: <br>
 Erlaubt die Darstellung von Höhenunterschieden, z.B. bei Fliesen oder Mauerwerk, ohne aufwändige Geometrie.
 
-ORM-Map: 
+ORM-Map: <br>
 Optimiert die Ressourcennutzung, indem mehrere Eigenschaften in einer Textur zusammengefasst werden.
 
 ### Anwendung im Unity-Standard-Shader
 Im Unity-Standard-Shader werden die Maps wie folgt zugewiesen:
 
-Albedo: Base Color Map
-Metallic: Metallic Map (ggf. mit Smoothness im Alpha-Kanal)
-Normal Map: Für Oberflächenstruktur
-Height Map: Optional für Parallax/Displacement
-Occlusion: Ambient Occlusion Map
+Albedo: Base Color Map <br>
+Metallic: Metallic Map (ggf. mit Smoothness im Alpha-Kanal) <br>
+Normal Map: Für Oberflächenstruktur <br>
+Height Map: Optional für Parallax/Displacement <br>
+Occlusion: Ambient Occlusion Map <br>
 Detail Mask: Für zusätzliche Detailtexturen
 
 ### Fazit
