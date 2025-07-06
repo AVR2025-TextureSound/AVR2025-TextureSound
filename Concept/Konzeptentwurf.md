@@ -189,6 +189,15 @@ Die Unity-Standard-Shader sind speziell darauf ausgelegt, PBR-Materialien darzus
 *vgl. Dörner et al., S.94*
 <br>
 
+### Zusammenhang von Shader und Texturen im Unity-Materialsystem
+Shader sind das zentrale Bindeglied zwischen den im Projekt verwendeten Texturen und dem finalen Erscheinungsbild eines 3D-Objekts in Unity. Sie bestimmen, wie die verschiedenen Textureigenschaften interpretiert und auf der GPU in Echtzeit berechnet werden. Das Zusammenspiel von Shader und Texturen ist entscheidend für die realistische Darstellung von Materialien.
+
+### Wie wirken Shader und Texturen zusammen?
+Materialien in Unity bestehen aus einem Shader und den zugewiesenen Texturen. Der Shader definiert, welche Textur-Slots es gibt und wie deren Daten verarbeitet werden. <br>
+Die Texturen liefern die Rohdaten (Farben, Höhen, Strukturen), der Shader interpretiert diese und berechnet daraus das finale Aussehen unter Berücksichtigung von Licht, Perspektive und weiteren Effekten. <br>
+Beispiel: Die Normal Map verändert im Fragment-Shader die Oberflächennormalen, sodass Licht realistischer gebrochen wird und Details sichtbar werden, ohne dass das Mesh komplexer wird.
+
+
 ## Objektverhalten
 Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
