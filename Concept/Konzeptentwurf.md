@@ -12,19 +12,8 @@ Die Wahrnehmung ist nie objektiv – sie wird durch eine Vielzahl von Faktoren g
 1. Kognitive Verzerrungen: Unsere Wahrnehmung wird durch persönliche Erfahrungen, kulturelle Hintergründe und emotionale Zustände beeinflusst. So kann eine Person ein Material als glatt empfinden, während eine andere es als rau wahrnimmt.
 2. Sinne im Zusammenspiel: Die Sinne sind eng miteinander verknüpft. Ein Geräusch kann beispielsweise die Wahrnehmung einer Textur verändern. Dieses Zusammenspiel wird als crossmodal perception bezeichnet.
 3. Kontext: Die gleiche Information wird in verschiedenen Kontexten unterschiedlich wahrgenommen. Ein Geräusch, das in einem ruhigen Raum angenehm ist, kann in einer lärmigen Umgebung störend wirken.
-
 <br>
-
-## Hintergrund: Multisensorische Wahrnehmung in VR
-
-### Warum nehmen Menschen Dinge unterschiedlich wahr?
-
-- **Kognitive Verzerrungen:** Persönliche Erfahrungen, Kultur und Emotionen beeinflussen die Wahrnehmung.
-- **Crossmodale Wahrnehmung:** Reize eines Sinnes (z. B. Klang) verändern die Wahrnehmung eines anderen Sinnes (z. B. Textur).
-- **Kontextabhängigkeit:** Die gleiche Information wird je nach Umgebung anders interpretiert.
-
 Diese Faktoren unterstreichen die Bedeutung eines sorgfältig abgestimmten multisensorischen Designs in VR.
-
 <br>
 
 ## Ziel und Zweck
@@ -45,121 +34,118 @@ Ermittlung, welche Reize am stärksten zur differenzierten Wahrnehmung beitragen
 
 <br>
 
-## Technische Umsetzung
+## Projektumfang
 
-Basierend auf *Dörner et al., Kapitel 3D-Objekte (S.81–95)*:
+Die Erstellung der 3D-Objekte beginnt mit der **Modellierung** von Oberflächen- und Festkörpermodellen in Blender. Nach dem Export werden die Modelle in Unity importiert, wo die **Materialeigenschaften** über Texturen visualisiert werden. Für eine realistische Darstellung kommen verschiedene Texturarten wie Bump-, Normal- oder Displacement-Maps zum Einsatz, die beispielsweise Oberflächenstruktur, Glanz oder Höheninformationen abbilden. Die Materialeigenschaften werden in Unity zusätzlich durch den gezielten Einsatz von **Shadern** umgesetzt, wobei Physically Based Rendering (PBR) für eine naturgetreue **Lichtsimulation** sorgt.
+Um die Objekte interaktiv und greifbar zu machen, wird das XR Interaction Toolkit genutzt. Dadurch lassen sich die Modelle in der Anwendung aufnehmen und bewegen. Ergänzend werden eigene Skripte implementiert, die beim Berühren oder Greifen bestimmte Aktionen und Sounds auslösen, wodurch sowohl **Interaktion** als auch **haptisches Feedback** ermöglicht werden.
 
-- **Modellierung:** Erstellung von Oberflächen- und Festkörpermodellen in **Blender**.
-- **Texturierung:** Einsatz von Texturen für realistische Oberflächen (z. B. Bump-, Normal- oder Displacement-Maps).
-- **Shader:** Anwendung von Physically Based Rendering (PBR) im Unity-Editor zur realistischen Lichtsimulation.
+vgl. *Dörner et al., Kapitel 3D-Objekte (S.81–95)*
 
 **Workflow:**
 1. Modellierung und Texturierung in Blender
 2. Export als `.fbx` oder `.glb`
 3. Import in Unity
-4. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.)
+4. Zuweisung Shader in Unity
+5. Materialzuweisung mit PBR-Materialien (Albedo, Normal, Metallic etc.) in Unity
+6. Einrichtung von Interaktionen und Haptik in Unity und unter Verwendung geeigneter Skripte
 
 <br>
 
-## 3D-Objekt-Erstellung
+## Modellierung - 3D-Objekt-Erstellung
 
 ### 3D-Objekte
 Grundlegend lassen sich Oberflächen- und Festkörpermodelle unterscheiden.
 - Oberflächenmodelle: beschreiben die äußere Hülle (engl. Surfaces) eines Objekts
 - Festkörpermodelle: (engl. Solids) beschreiben das Volumen eines Objekts.
+*vgl. Dörner et al., S.86*
 
-### Beispiele:
-
+**Beispiele:**
 - Ein Glas wird als hohles Polygonnetz modelliert (z. B. Zylinder mit extrudiertem Inneren). [Glas-Material in Blender 2.8 erstellen – Tutorial 03](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 - Ein Schwamm wird als Low-Poly-Mesh modelliert, um die poröse Struktur zu simulieren.
 - Ein Holzbrett wird als Triangle Strip dargestellt, das Texturen (Albedo, Normal) nutzt, um Maserungseffekte zu erzeugen. [Blender 3D Tutorial – Holz zersplittern – Teil 2 (deutsch)](https://www.youtube.com/watch?v=GwFJ8iJZnHU)
 
-*vgl. Dörner et al., S.86*
 <br>
 
-## Erscheinungsbild Materialien
-“Das äußere Erscheinungsbild von Objekten wird vor allem durch deren Materialeigenschaften bzgl. Reflexion und Durchlässigkeit (Transparenz und Transluzenz) von einfallendem Licht charakterisiert.”
+**3D-Objekte - Umsetzung in BLENDER**
+In der praktischen Umsetzung zeigte sich, dass nicht alle Material- und Shader-Eigenschaften aus Blender direkt in Unity übernommen werden. Besonders komplexe Blender-Materialien oder Shader werden beim Import häufig nicht korrekt dargestellt. Für den Export empfiehlt es sich daher, auf einfache Materialien wie den Principled BSDF Shader zu setzen und nötige Effekte (z. B. Normal- oder Roughness-Maps) als Texturen zu backen. In Unity müssen die Materialien meist neu zugewiesen und an das Unity-Shader-System angepasst werden, um die gewünschte Optik zu erreichen. Zusätzlich ist es wichtig, beim Export auf korrekte Skalierung, Achsenausrichtung und ein Unity-kompatibles Exportprofil zu achten, damit die Modelle wie geplant übernommen werden.
 
-### Physikbasiertes Rendering (engl. Physically Based Rendering, PBR)
-- **Vorteil:** Realistische und konsistente Ergebnisse.
-- **Nachteil:** Hoher Rechenaufwand.
-
-### Beleuchtungsmodell von Phong
-- **Vorteil:** Einfach und ressourcenschonend
-- **Nachteil:** Unrealistische Darstellung
-
-Der Unity-Editor verwendet Physically Based Rendering (PBR), um realistische Beleuchtungsszenarien präziser zu simulieren.
-[Creating Physically Based Materials – Unity Learn](https://learn.unity.com/tutorial/creating-pbr-materials)
-
-*vgl. Dörner et al., S.90*
-<br>
-
-## Erscheinungsbild Texturen
-“Um Oberflächenstrukturen wie Stein, Holz usw. nachzubilden, ohne jedes Detail geometrisch modellieren zu müssen, bedient man sich des „Tricks“ der Texturierung. Texturen sind Rasterbilder, die auf die Objektoberflächen gelegt werden.”
+**Erstellte Objekte und deren Eigenschaft:**
 
 <br>
 
-**Realistische Oberflächenstrukturen lassen sich durch folgende Verfahren erzeugen:**
+| Eigenschaft | Objekt | 
+|:-----|:--------|
+| Glatt | Glas und Flasche | 
+| Glatt | Metallstange | 
+| Rau | Holzklotz|
+| Rau | Sandpapier | 
 
-### Bump-Mapping:
-Simuliert Unebenheiten durch Licht- und Schatteneffekte, ohne die Geometrie des Objekts zu verändern.
+<br>
 
-### Normal-Mapping:
-Manipuliert die Oberflächennormalen mit Hilfe von RGB-Texturen, was eine realistischere Lichtinteraktion ermöglicht.
+## Materialien und Texturen
+Das äußere Erscheinungsbild von Objekten wird maßgeblich durch deren Materialeigenschaften bestimmt, insbesondere durch die Art und Weise, wie die Oberfläche Licht reflektiert oder durchlässt (Transparenz und Transluzenz).
 
-### Displacement-Mapping:
-Verändert die tatsächliche Geometrie des Objekts, wodurch auch die Silhouette beeinflusst wird und höchste Detailgenauigkeit erreicht wird.
+In Unity übernehmen **Materialien** und **Texturen** dabei unterschiedliche, aber eng miteinander verknüpfte Aufgaben. Ein Material definiert, wie die Oberfläche eines 3D-Objekts dargestellt wird. Es legt Eigenschaften wie Grundfarbe, Glanz, Reflexion und Transparenz fest. Um diese Eigenschaften realistisch abzubilden, kann ein Material verschiedene Texturen nutzen – beispielsweise für die Grundfarbe (Albedo), die Oberflächenstruktur (Normal Map) oder die Rauigkeit (Roughness Map). Texturen sind dabei reine Bilddateien, die als Informationsquelle für das Material dienen. Erst durch die Kombination aus Material und den zugewiesenen Texturen entsteht in Unity die gewünschte visuelle Wirkung auf der Objektoberfläche.
 
-Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermöglicht deren Anwendung sowohl im Materialsystem als auch direkt auf der Geometrie.
-[Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))
+**Physikbasiertes Rendering (Physically Based Rendering, PBR)**
+Unity verwendet Physically Based Rendering (PBR), um Materialien und deren Lichtverhalten möglichst realistisch und konsistent darzustellen. Der Vorteil von PBR liegt in der realitätsnahen Abbildung von Oberflächeneigenschaften, allerdings ist der Rechenaufwand höher als bei einfacheren Modellen. Im Gegensatz dazu steht das klassische Phong-Beleuchtungsmodell, das zwar ressourcenschonend ist, aber weniger realistische Ergebnisse liefert.
 
-*vgl. Dörner et al., S.93*
+**Erscheinungsbild durch Texturen**
+Um komplexe Oberflächenstrukturen wie Holz, Stein oder Metall möglichst realistisch darzustellen, ohne jedes Detail geometrisch modellieren zu müssen, werden Texturen eingesetzt. Sie werden als Rasterbilder auf die Oberfläche eines 3D-Objekts gelegt und simulieren so Materialeigenschaften und Details.
 
-### Verwendete Texture-Maps in Unity: 
+**Verfahren zur Erzeugung realistischer Oberflächenstrukturen**
 
-Base Color (Albedo) = Grundfarbe der Oberfläche: <br>
-Definiert das Aussehen des Materials ohne Licht- oder Schatteneffekte. Sorgt für die Grundfarbgebung und ist essenziell für die visuelle Wiedererkennung von Objekten.
+<br>
 
-Normal Map = Simulation von Oberflächenstruktur:	<br>
-Erzeugt den Eindruck von feinen Details und Unebenheiten, ohne zusätzliche Geometrie. Verbessert die Lichtberechnung und macht Oberflächen realistischer, ohne die Performance zu beeinträchtigen.
+| Verfahren | Eigenschaft | 
+|:-----|:--------|
+| Bump-Mapping | Simuliert Unebenheiten durch Licht- und Schatteneffekte, ohne die Geometrie des Objekts zu verändern. | 
+| Normal-Mapping | Verändert die Oberflächennormalen mittels RGB-Texturen, was eine realistischere Lichtinteraktion ermöglicht. | 
+| Displacement-Mapping | Passt die Geometrie des Objekts tatsächlich an, wodurch auch die Silhouette beeinflusst wird und höchste Detailgenauigkeit möglich ist.|
 
-Roughness / Smoothness = Steuerung der Spiegelungsschärfe <br>
-Bestimmt, wie scharf oder matt Reflexionen erscheinen. Erlaubt die realistische Darstellung von Materialien wie Keramik, Metall oder Holz.
+<br>
 
-Metallic Map = Metallische Eigenschaften <br>
-Legt fest, ob und wie stark ein Material metallisch wirkt. Wichtig für die physikalisch korrekte Darstellung von Metallen und deren Reflexionen.
+*vgl. Dörner et al., S.90 - 93*
 
-Ambient Occlusion (AO) = Simulation von Schattierungen <br>
-Verstärkt Schatten in Vertiefungen und an Kanten. Sorgt für mehr Tiefe und Plastizität, besonders bei indirekter Beleuchtung.
+<br>
 
-Height/Displacement Map = Höheninformationen für Geometrie <br>
-Ermöglicht Parallax- oder Displacement-Effekte, wodurch Oberflächen noch plastischer wirken. Besonders nützlich für Boden- oder Wandstrukturen.
+*[Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))*
 
-ORM-Map = Kombinierte Map (AO, Roughness, Metallic) <br>
-Spart Speicherplatz und Ladezeit, da mehrere Eigenschaften in einer Textur gespeichert werden können. Effizient für Echtzeit-Anwendungen.
+<br>
+
+**Verwendete Texture-Maps in Unity:**
+
+<br>
+
+| Texture-Map | Definition | Eigenschaft |
+|:-----|:--------|:--------|
+| Base Color (Albedo) | Grundfarbe der Oberfläche | Definiert das Aussehen des Materials ohne Licht- oder Schatteneffekte. Sorgt für die Grundfarbgebung und ist essenziell für die visuelle Wiedererkennung von Objekten.|
+| Normal Map| Simulation von Oberflächenstruktur| Erzeugt den Eindruck von feinen Details und Unebenheiten, ohne zusätzliche Geometrie. Verbessert die Lichtberechnung und macht Oberflächen realistischer, ohne die Performance zu beeinträchtigen.|
+| Roughness / Smoothness | Steuerung der Spiegelungsschärfe|Bestimmt, wie scharf oder matt Reflexionen erscheinen. Erlaubt die realistische Darstellung von Materialien wie Keramik, Metall oder Holz.|
+| Metallic Map | Metallische Eigenschaften |Legt fest, ob und wie stark ein Material metallisch wirkt. Wichtig für die physikalisch korrekte Darstellung von Metallen und deren Reflexionen.|
+| Ambient Occlusion (AO) | Simulation von Schattierungen |Verstärkt Schatten in Vertiefungen und an Kanten. Sorgt für mehr Tiefe und Plastizität, besonders bei indirekter Beleuchtung.|
+| Height/Displacement Map | Höheninformationen für Geometrie |Ermöglicht Parallax- oder Displacement-Effekte, wodurch Oberflächen noch plastischer wirken. Besonders nützlich für Boden- oder Wandstrukturen.|
+| ORM-Map | Kombinierte Map (AO, Roughness, Metallic) |Spart Speicherplatz und Ladezeit, da mehrere Eigenschaften in einer Textur gespeichert werden können. Effizient für Echtzeit-Anwendungen.|
+
+<br>
+
 
 ### Warum werden diese Texture-Maps verwendet?
 
-Base Color (Albedo): <br>
-Unverzichtbar für die Grundfarbgebung jedes Materials. Ohne sie wirken Objekte flach und unnatürlich.
+<br>
 
-Normal Map: <br>
-Fügt Details wie Kratzer, Fugen oder Poren hinzu, ohne das Mesh zu verkomplizieren. Das verbessert die Performance und den Realismus.
+| Texture-Map | Verwendung |
+|:-----|:--------|
+| Base Color (Albedo) | Unverzichtbar für die Grundfarbgebung jedes Materials. Ohne sie wirken Objekte flach und unnatürlich. | 
+| Normal Map | Fügt Details wie Kratzer, Fugen oder Poren hinzu, ohne das Mesh zu verkomplizieren. Das verbessert die Performance und den Realismus. | 
+| Roughness / Smoothness | Steuert, wie Licht auf der Oberfläche reflektiert wird. Unterschiedliche Werte ermöglichen die Darstellung von matten bis hochglänzenden Materialien. | 
+| Metallic Map | Unterscheidet zwischen metallischen und nicht-metallischen Oberflächen. Essenziell für PBR (Physically Based Rendering) und realistische Lichtreflexionen. | 
+| Ambient Occlusion | Simuliert weiche Schatten in Vertiefungen, was die räumliche Wirkung und Tiefe verstärkt.|
+| Height/Displacement Map | Erlaubt die Darstellung von Höhenunterschieden, z.B. bei Fliesen oder Mauerwerk, ohne aufwändige Geometrie.|
+| ORM-Map| Optimiert die Ressourcennutzung, indem mehrere Eigenschaften in einer Textur zusammengefasst werden.|
 
-Roughness / Smoothness: <br>
-Steuert, wie Licht auf der Oberfläche reflektiert wird. Unterschiedliche Werte ermöglichen die Darstellung von matten bis hochglänzenden Materialien.
+<br>
 
-Metallic Map: <br>
-Unterscheidet zwischen metallischen und nicht-metallischen Oberflächen. Essenziell für PBR (Physically Based Rendering) und realistische Lichtreflexionen.
-
-Ambient Occlusion: <br>
-Simuliert weiche Schatten in Vertiefungen, was die räumliche Wirkung und Tiefe verstärkt.
-
-Height/Displacement Map: <br>
-Erlaubt die Darstellung von Höhenunterschieden, z.B. bei Fliesen oder Mauerwerk, ohne aufwändige Geometrie.
-
-ORM-Map: <br>
-Optimiert die Ressourcennutzung, indem mehrere Eigenschaften in einer Textur zusammengefasst werden.
 
 ### Anwendung im Unity-Standard-Shader
 Im Unity-Standard-Shader werden die Maps wie folgt zugewiesen:
