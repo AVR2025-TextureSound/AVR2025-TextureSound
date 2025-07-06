@@ -114,6 +114,66 @@ Blender ist für alle drei Mapping-Techniken umfassend ausgestattet und ermögli
 [Understanding Bump Maps and Normal Maps in Blender | Blender Render farm]([https://learn.unity.com/tutorial/introduction-to-shader-graph](https://irendering.net/understanding-bump-maps-and-normal-maps-in-blender/))
 
 *vgl. Dörner et al., S.93*
+
+### Verwendete Texture-Maps in Unity: 
+
+Base Color (Albedo) = Grundfarbe der Oberfläche:
+Definiert das Aussehen des Materials ohne Licht- oder Schatteneffekte. Sorgt für die Grundfarbgebung und ist essenziell für die visuelle Wiedererkennung von Objekten.
+
+Normal Map = Simulation von Oberflächenstruktur:	
+Erzeugt den Eindruck von feinen Details und Unebenheiten, ohne zusätzliche Geometrie. Verbessert die Lichtberechnung und macht Oberflächen realistischer, ohne die Performance zu beeinträchtigen.
+
+Roughness / Smoothness = Steuerung der Spiegelungsschärfe
+Bestimmt, wie scharf oder matt Reflexionen erscheinen. Erlaubt die realistische Darstellung von Materialien wie Keramik, Metall oder Holz.
+
+Metallic Map = Metallische Eigenschaften
+Legt fest, ob und wie stark ein Material metallisch wirkt. Wichtig für die physikalisch korrekte Darstellung von Metallen und deren Reflexionen.
+
+Ambient Occlusion (AO) = Simulation von Schattierungen
+Verstärkt Schatten in Vertiefungen und an Kanten. Sorgt für mehr Tiefe und Plastizität, besonders bei indirekter Beleuchtung.
+
+Height/Displacement Map = Höheninformationen für Geometrie
+Ermöglicht Parallax- oder Displacement-Effekte, wodurch Oberflächen noch plastischer wirken. Besonders nützlich für Boden- oder Wandstrukturen.
+
+ORM-Map = Kombinierte Map (AO, Roughness, Metallic)
+Spart Speicherplatz und Ladezeit, da mehrere Eigenschaften in einer Textur gespeichert werden können. Effizient für Echtzeit-Anwendungen.
+
+### Warum werden diese Texture-Maps verwendet?
+
+Base Color (Albedo): 
+Unverzichtbar für die Grundfarbgebung jedes Materials. Ohne sie wirken Objekte flach und unnatürlich.
+
+Normal Map: 
+Fügt Details wie Kratzer, Fugen oder Poren hinzu, ohne das Mesh zu verkomplizieren. Das verbessert die Performance und den Realismus.
+
+Roughness / Smoothness: 
+Steuert, wie Licht auf der Oberfläche reflektiert wird. Unterschiedliche Werte ermöglichen die Darstellung von matten bis hochglänzenden Materialien.
+
+Metallic Map: 
+Unterscheidet zwischen metallischen und nicht-metallischen Oberflächen. Essenziell für PBR (Physically Based Rendering) und realistische Lichtreflexionen.
+
+Ambient Occlusion: 
+Simuliert weiche Schatten in Vertiefungen, was die räumliche Wirkung und Tiefe verstärkt.
+
+Height/Displacement Map: 
+Erlaubt die Darstellung von Höhenunterschieden, z.B. bei Fliesen oder Mauerwerk, ohne aufwändige Geometrie.
+
+ORM-Map: 
+Optimiert die Ressourcennutzung, indem mehrere Eigenschaften in einer Textur zusammengefasst werden.
+
+### Anwendung im Unity-Standard-Shader
+Im Unity-Standard-Shader werden die Maps wie folgt zugewiesen:
+
+Albedo: Base Color Map
+Metallic: Metallic Map (ggf. mit Smoothness im Alpha-Kanal)
+Normal Map: Für Oberflächenstruktur
+Height Map: Optional für Parallax/Displacement
+Occlusion: Ambient Occlusion Map
+Detail Mask: Für zusätzliche Detailtexturen
+
+### Fazit
+Der gezielte Einsatz der verschiedenen Texture-Maps in Unity ermöglicht eine effiziente, flexible und realistische Materialgestaltung. Jede Map trägt spezifisch zur visuellen Qualität und Performance des Projekts bei und ist daher ein wichtiger Bestandteil moderner 3D-Workflows
+
 <br>
 
 ## Erscheinungsbild Shader
