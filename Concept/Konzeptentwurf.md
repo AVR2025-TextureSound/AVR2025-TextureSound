@@ -197,18 +197,19 @@ Materialien in Unity bestehen aus einem Shader und den zugewiesenen Texturen. De
 Die Texturen liefern die Rohdaten (Farben, Höhen, Strukturen), der Shader interpretiert diese und berechnet daraus das finale Aussehen unter Berücksichtigung von Licht, Perspektive und weiteren Effekten. <br>
 Beispiel: Die Normal Map verändert im Fragment-Shader die Oberflächennormalen, sodass Licht realistischer gebrochen wird und Details sichtbar werden, ohne dass das Mesh komplexer wird.
 
+### Fazit
+Der Shader ist das Herzstück der visuellen Darstellung. Er verbindet die im Projekt verwendeten Texturen mit den physikalischen und künstlerischen Anforderungen an das Material. Erst durch den Shader entfalten die Texturen ihre Wirkung und ermöglichen realistische, flexible und performante 3D-Grafiken in Unity.
+
 
 ## Objektverhalten
 Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
-### Beispiele:
-
 ### Glas
-- Fallen und Zerbrechen
+- Zusammenstoßen und zerbrechen
 - Zustände: Intakt / Zerbrochen
-- Ereignis: Das Glas fällt aus einer bestimmten Höhe auf den Boden
-- Umsetzung: Wenn das Glas-Objekt mit dem „Boden“-Objekt kollidiert (OnCollisionEnter in Unity), wird das intakte Glas deaktiviert und ein vorgefertigtes „zerbrochenes Glas“-Modell an derselben Stelle aktiviert
-- Zustandsautomat: Intakt → [Kollision mit Boden] → Zerbrochen
+- Ereignis: Das Glas kollidiert mit der Flasche
+- Umsetzung: Wenn das Glas-Objekt mit dem Flaschen-Objekt kollidiert (OnCollisionEnter Script in Unity), wird das intakte Glas deaktiviert und ein vorgefertigtes „zerbrochenes Glas“-Modell an derselben Stelle aktiviert
+- Zustandsautomat: Intakt → [Kollision mit Flasche] → Zerbrochen
 
 ### Holz
 - Aufheben und Ablegen
@@ -217,7 +218,7 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 - Umsetzung: Beim Drücken des Greif-Buttons wird das Holzstück dem Controller „angeheftet“ (Parenting in Unity). Beim Loslassen wird das Holzstück wieder auf dem Tisch platziert.
 - Zustandsautomat: Liegt auf dem Tisch → [Greifen] → Wird gehalten / Wird gehalten → [Loslassen] → Liegt auf dem Tisch
 
-### Schwamm
+### Schwamm (nicht erstellt)
 - Drücken und Loslassen
 - Zustände: Entspannt / Komprimiert
 - Ereignis: Der Nutzer drückt den Schwamm (z. B. mit Trigger-Button).
@@ -226,6 +227,7 @@ Objekte können ihren Zustand ändern, wenn ein bestimmtes Ereignis eintritt.
 
 *vgl. Dörner et al., S.100*
 <br>
+
 
 ## Beleuchtung
 
@@ -272,6 +274,16 @@ Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 - Glas: Klirren
 - Holz: Knacken
 - Schwamm: Quietschen
+
+
+**Umsetzung der Soundeffekte in der Anwendung**
+
+### Glas Objekte
+Im Projekt werden unterschiedliche Soundeffekte gezielt eingesetzt, um das Materialverhalten und die Interaktion der Objekte realistisch abzubilden. So ertönt beim Kontakt von **Glas_1** und **Flasche_1** ein typisches Klirren, das den Klang von aneinanderschlagendem Glas simuliert. Bei **Glas_2** und **Flasche_2** wurde das Material auf Keramik geändert; entsprechend wird beim Zusammenstoß ein charakteristischer Keramik-Sound abgespielt. Im Fall von **Glas_3** und **Flasche_3** zerbricht das Glas beim Kontakt mit der Flasche, wobei ein spezifischer Bruch- und Klirr-Sound ausgelöst wird.
+
+Um sicherzustellen, dass jeweils nur die korrekten Objektpaare miteinander interagieren und die passenden Sounds auslösen, wurden in Unity **Tags** für die einzelnen Objekte verwendet. So kommunizieren beispielsweise nur **Glas_1** mit **Flasche_1**, **Glas_2** mit **Flasche_2** und **Glas_3** mit **Flasche_3** untereinander. Die Verwendung von Tags ermöglicht eine eindeutige Identifikation der Objekte im Skript und stellt sicher, dass die Soundeffekte nur bei den vorgesehenen Objektkombinationen abgespielt werden. 
+
+Durch diese Kombination aus materialabhängigen Sounds und gezieltem Tag-Einsatz wird ein konsistentes und immersives akustisches Feedback im Projekt gewährleistet.
 
 <br>
 
