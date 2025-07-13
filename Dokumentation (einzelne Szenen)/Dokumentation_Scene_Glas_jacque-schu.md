@@ -89,7 +89,7 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
 ## 6. Physikalische Eigenschaften: Collider & Rigidbody
 
 - **Collider:**  
-  - Jedes Objekt erhielt einen passenden Collider (meist MeshCollider mit „Convex“ aktiviert oder BoxCollider).
+  - Jedes Objekt erhielt einen passenden Collider (meist BoxCollider).
 
 - **Rigidbody:**  
   - Jedes interaktive Objekt erhielt eine Rigidbody-Komponente, damit physikalische Kräfte und Kollisionen korrekt simuliert werden.
@@ -113,13 +113,28 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
 
 - **Mouse Grab (nur Desktop):**  
   Ein Script ermöglichte das Greifen per Maus. Das Script prüft beim Start, ob ein XR-Gerät aktiv ist, und deaktiviert sich automatisch im VR-Modus.
+  <br/>
+  *Script:* WS24_25-ProjGrp_IMTECH_AVR2025-TextureSound\Assets\Texture_Sound\Glas\Script\***MouseGrab.cs***
 
 - **Sound- und Effektzuweisung:**  
   Bei Kollisionen (z.B. `Glas_3` mit `Flasche_3`) wird ein Sound abgespielt und ggf. das Mesh/Prefab gewechselt (z.B. zu Splittern). Nach Ablauf einer Zeit kann das Objekt automatisch in den Ursprungszustand zurückkehren.
+  <br/>
+  *Script:* WS24_25-ProjGrp_IMTECH_AVR2025-TextureSound\Assets\Texture_Sound\Glas\Script\***GlassCollisionSound.cs***
+  <br/>
+  *Sounddateien:*
+  WS24_25-ProjGrp_IMTECH_AVR2025-TextureSound\Assets\Texture_Sound\Glas\Sound\
+  <br/>
+  20170101-big-wine-bottle-on-ceramic-floor-14-80677.mp3
+  <br/>
+  broken-glass-40016.mp3
+  <br/>
+  glass-clinking-92385.mp3
 
 - **Info-Panel:**  
   Ein Panel mit TextMeshPro zeigt kontextabhängige Informationen an.  
-  Die Logik prüft per Raycast (Maus) oder XR-Hover-Event (über die XR Grab Interactable Events), welches Objekt aktuell „gehovered“ wird, und zeigt den passenden Text an (Zuweisung zentral im Script über Tags).
+  Die Logik prüft per Raycast (Maus) oder XR-Hover-Event (über die XR Grab Interactable Events), welches Objekt aktuell „gehovered“ wird, und zeigt den passenden   Text an (Zuweisung zentral im Script über Tags).
+  <br/>
+  *Script:* WS24_25-ProjGrp_IMTECH_AVR2025-TextureSound\Assets\Texture_Sound\Glas\Script\***TooltipByMouse.cs***
 
 ---
 
