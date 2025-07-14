@@ -265,11 +265,16 @@ Ein Spot Light auf einen Schwamm hebt die Oberflächenstruktur gezielt hervor
 **Umsetzung der Soundeffekte in der Anwendung**
 
 ### Glas Objekte
-Im Projekt werden unterschiedliche Soundeffekte gezielt eingesetzt, um das Materialverhalten und die Interaktion der Objekte realistisch abzubilden. So ertönt beim Kontakt von **Glas_1** und **Flasche_1** ein typisches Klirren, das den Klang von aneinanderschlagendem Glas simuliert. Bei **Glas_2** und **Flasche_2** wurde das Material auf Keramik geändert; entsprechend wird beim Zusammenstoß ein charakteristischer Keramik-Sound abgespielt. Im Fall von **Glas_3** und **Flasche_3** zerbricht das Glas beim Kontakt mit der Flasche, wobei ein spezifischer Bruch- und Klirr-Sound ausgelöst wird.
+- ein typisches Klirren, das den Klang von aneinanderschlagendem Glas simuliert
+- zerbricht das Glas beim Kontakt mit der Flasche, wird ein spezifischer Bruch- und Klirr-Sound ausgelöst
 
-Um sicherzustellen, dass jeweils nur die korrekten Objektpaare miteinander interagieren und die passenden Sounds auslösen, wurden in Unity **Tags** für die einzelnen Objekte verwendet. So kommunizieren beispielsweise nur **Glas_1** mit **Flasche_1**, **Glas_2** mit **Flasche_2** und **Glas_3** mit **Flasche_3** untereinander. Die Verwendung von Tags ermöglicht eine eindeutige Identifikation der Objekte im Skript und stellt sicher, dass die Soundeffekte nur bei den vorgesehenen Objektkombinationen abgespielt werden. 
+### Holz Objekte
 
-Durch diese Kombination aus materialabhängigen Sounds und gezieltem Tag-Einsatz wird ein konsistentes und immersives akustisches Feedback im Projekt gewährleistet.
+### Metall Objekte
+
+### Sandpapier Objekte
+
+Durch diese Kombination aus materialabhängigen Sounds und gezieltem Einsatz wird ein konsistentes und immersives akustisches Feedback im Projekt gewährleistet.
 
 <br>
 
