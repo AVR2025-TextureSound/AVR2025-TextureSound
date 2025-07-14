@@ -172,8 +172,10 @@ Für die Interaktion wurde das XR Grab Interactable aktiviert. Um die physikalis
 ### Weiterentwicklung
 
 - Für eine realistischere Schleifbewegung kann der lange Sound als Schleife abgespielt und beim Ende der Bewegung gestoppt werden. Aktuell läuft der Sound auch bei Berührung ohne Bewegung zu Ende, was nicht natürlich ist.
+- Collider besser definieren, damit der Sound nicht bei "Nähe" ausgeführt wird.
+- Das Papier könnte sich leicht biegen beim hochheben.
 - Die Implementierung von Tooltips für alle Objekte ist vorgesehen, um die Informationsvermittlung weiter zu verbessern.
-
+  
 ### Offene Punkte / Fehler
 - Einige Papiere sinken nach dem Werfen in den Tisch ein.
 
