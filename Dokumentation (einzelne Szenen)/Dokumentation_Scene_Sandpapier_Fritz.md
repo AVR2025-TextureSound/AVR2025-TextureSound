@@ -167,6 +167,12 @@ Für die Interaktion wurde das XR Grab Interactable aktiviert. Um die physikalis
 
 ---
 
+## Bewertung der Komponenten
+
+Aus meiner persönlicher Sicht zeigt sich, dass insbesondere die Kombination aus gebackener Textur und Low-Poly-Modellierung ein hervorragendes Verhältnis von Darstellungsqualität zu Ressourcenaufwand bietet.
+Bei einer sehr einfachen Geomtrie kann ein Foto sehr immersiv wirken, da die Geomtrie das Bild nicht verändert. 
+Sehr komplexe Geometrien sind dem realen Abbild am nächsten und können durch eine Farbe am besten wirken. 
+
 ## Weiterentwicklung, Herausforderungen
 
 ### Weiterentwicklung
@@ -197,5 +203,5 @@ Diese Anpassungen waren notwendig, um für alle Teammitglieder die VR-Funktional
 
 Die im Projekt eingesetzten Komponenten – bestehend aus unterschiedlichen Objektgeometrien, Texturen und Materialien, Soundelementen sowie UI-Skripten – bilden eine solide Grundlage für die wissenschaftliche Untersuchung haptischer Wahrnehmung in virtuellen Umgebungen. Für eine belastbare und praxisnahe Studie sollten jedoch alle Komponenten hinsichtlich Qualität, Funktionalität und Realismus weiter optimiert werden, um valide und übertragbare Ergebnisse zu erzielen.
 
-Aus persönlicher Sicht zeigt sich, dass insbesondere die Kombination aus gebackener Textur und Low-Poly-Modellierung ein hervorragendes Verhältnis von Darstellungsqualität zu Ressourcenaufwand bietet.
+
 
