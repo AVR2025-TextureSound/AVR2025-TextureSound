@@ -169,9 +169,11 @@ Für die Interaktion wurde das XR Grab Interactable aktiviert. Um die physikalis
 
 ## Bewertung der Komponenten
 
-Aus meiner persönlicher Sicht zeigt sich, dass insbesondere die Kombination aus gebackener Textur und Low-Poly-Modellierung ein hervorragendes Verhältnis von Darstellungsqualität zu Ressourcenaufwand bietet.
-Bei einer sehr einfachen Geomtrie kann ein Foto sehr immersiv wirken, da die Geomtrie das Bild nicht verändert. 
-Sehr komplexe Geometrien sind dem realen Abbild am nächsten und können durch eine Farbe am besten wirken. 
+Aus meiner persönlichen Sicht zeigt sich, dass insbesondere die Kombination aus gebackener Textur (Texture Baking) und Low-Poly-Modellierung ein ausgezeichnetes Verhältnis von Darstellungsqualität zu Ressourcenaufwand bietet. Low-Poly-Modelle zeichnen sich durch eine reduzierte Polygonanzahl aus, was die Performance deutlich verbessert und die Systemressourcen schont. Durch das Backen von Texturen können dabei komplexe Details und Oberflächeneffekte eines High-Poly-Modells auf das Low-Poly-Modell übertragen werden, sodass trotz der vereinfachten Geometrie eine hohe visuelle Qualität erhalten bleibt.
+
+Bei sehr einfacher Geometrie kann ein Foto oder eine fotorealistische Textur besonders immersiv wirken, da die Geometrie das Bild nicht verfälscht und somit eine realitätsnahe Wahrnehmung ermöglicht. Die einfache Form dient hier als unauffällige Grundlage, die das Bild in den Vordergrund stellt. 
+
+Im Gegensatz dazu nähern sich sehr komplexe Geometrien mit hoher Polygonanzahl dem realen Abbild eines Objekts am nächsten, da sie feinste Details in der Form abbilden können. In solchen Fällen ist oft eine einfache Farbgebung ausreichend, da die Geometrie selbst bereits die relevanten Details transportiert. 
 
 ## Weiterentwicklung, Herausforderungen
 
