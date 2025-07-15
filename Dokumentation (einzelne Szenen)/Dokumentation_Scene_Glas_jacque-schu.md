@@ -1,4 +1,4 @@
-# Projektdokumentation: AuV_Reality
+# Projektdokumentation: Haptik Labor | Szene: Glas
 
 ## Übersicht
 
