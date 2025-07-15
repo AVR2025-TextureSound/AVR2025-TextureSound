@@ -127,7 +127,7 @@ Source: Unity
 ## 6. Physikalische Eigenschaften: Collider & Rigidbody
 
 - **Collider:**  
-  - Jedes Objekt erhielt einen passenden Collider (meist BoxCollider).
+  - Jedes Objekt erhielt einen passenden Collider (meist BoxCollider). Der Collider ist eine grundlegende Komponente in Unity, die es einem Objekt ermöglicht,        mit anderen Objekten im 3D-Raum physikalisch zu interagieren. Er definiert den Bereich, in dem Kollisionen erkannt werden, ohne dabei unbedingt ein               sichtbares Mesh zu benötigen.
 
 - **Rigidbody:**  
   - Jedes interaktive Objekt erhielt eine Rigidbody-Komponente, damit physikalische Kräfte und Kollisionen korrekt simuliert werden.
