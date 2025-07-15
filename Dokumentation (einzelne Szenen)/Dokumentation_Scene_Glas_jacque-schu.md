@@ -30,7 +30,8 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
     - Height/Displacement (wo sinnvoll)
 
 - **Texturen (Sources):** 
-  https://www.cgtrader.com/
+  https://www.poliigon.com/
+  https://3dtextures.me/
 
 - **Sounds:**  
   Für jede Interaktion (z.B. Klirren, dumpfer Aufprall, Splittern) wurden passende Audiodateien recherchiert, bearbeitet und als AudioClips importiert.
@@ -52,7 +53,9 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
 - **Materialzuweisung:**  
   Jedem Duplikat wurde das gewünschte Material mit den recherchierten Texturen zugewiesen.
   
-### Glas_3 & Flasche_3 (Glas-Material: Glass_Frosted_001)
+### Glas_3 & Flasche_3 (Glas-Material: Glass_Frosted_001) 
+Source: https://3dtextures.me/2020/08/27/glass-frosted-001/
+
 
 | Textur-Map                        | Unity Slot (Standard Shader/URP Lit)      | Funktion/Vorteil                                                                                           |
 |------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -62,6 +65,8 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
 | Glass_Frosted_001_normal           | Normal Map                                | Täuscht Oberflächenstruktur vor, erzeugt realistische Lichtreflexe und Mikrodetails.                       |
 
 ### Glas_2 & Flasche_2 (Keramik-Material: Poliigon_ClayCeramicGlossy_5212)
+Source: https://www.poliigon.com/texture/plain-white-ceramic-texture/5212
+
 
 | Textur-Map                                     | Unity Slot (Standard Shader/URP Lit)      | Funktion/Vorteil                                                                                           |
 |------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -72,6 +77,8 @@ Diese Dokumentation beschreibt die praktisch umgesetzten Schritte zur Entwicklun
 | Poliigon_ClayCeramicGlossy_5212_Roughness      | Smoothness/Roughness Map                  | Steuert Glanz und Rauheit der Oberfläche, beeinflusst Spiegelungen und Lichtverhalten.                     |
 
 ### Glas_1 & Flasche_1 (Vorgefertigtes Asset)
+Source: Unity 
+
 
 | Textur-Map/Slot        | Unity Slot (Standard Shader/URP Lit)      | Funktion/Vorteil                                                                                           |
 |------------------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------|
