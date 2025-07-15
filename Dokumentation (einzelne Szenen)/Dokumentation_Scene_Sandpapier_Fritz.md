@@ -180,6 +180,8 @@ Es ist also immer ein gewisser Input notwendig um ein immersives Ergebnis zu erz
 - Collider besser definieren, damit der Sound nicht bei "Nähe" ausgeführt wird.
 - Das Papier könnte sich leicht biegen beim hochheben.
 - Die Implementierung von Tooltips für alle Objekte ist vorgesehen, um die Informationsvermittlung weiter zu verbessern.
+- Vibration einbinden beim Greifen
+- Erweitern der Interaktion mit anderen Materialien
   
 ### Offene Punkte / Fehler
 - Einige Papiere sinken nach dem Werfen in den Tisch ein.
