@@ -17,7 +17,7 @@ Weiterhin wurden alle Varianten zusätzlich mit **zwei individuellen Audiospuren
 
 Ergänzend wurde (exemplarisch) ein **interaktiver, informativer Tooltip** implementiert, der beim Auswählen eines Sandpapier-Objekts erscheint und kontextbezogene Informationen zur jeweiligen Variante bereitstellt.
 
-Durch die Kombination aus variabler Geometrie, diverser Materialität, auditiver Rückmeldung und kontextsensitiver Information wird eine differenzierte und wissenschaftlich fundierte Untersuchung der Haptik von Sandpapier in einer virtuellen Umgebung ermöglicht.
+Durch die Kombination aus Geometrien, verschiedenen Materialien, auditiver Rückmeldung und kontextabhängiger Information wird eine Untersuchung der Haptik von Sandpapier in einer virtuellen Umgebung ermöglicht.
 
 ---
 
