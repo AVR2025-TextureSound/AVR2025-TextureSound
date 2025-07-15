@@ -122,7 +122,7 @@ Beide Sounds wurden unter realen Bedingungen aufgenommen. Die beiden Audiodateie
 
 ## Umsetzung in Unity
 
-Die erstellten Komponenten wurden in Unity in einer Szene kombiniert und präsentiert. Um eine möglichst realitätsnahe und wissenschaftlich fundierte Versuchsumgebung zu schaffen, wurden folgende Punkte berücksichtigt.
+Die erstellten Komponenten wurden in Unity in einer Szene kombiniert und präsentiert. Um eine möglichst realitätsnahe Versuchsumgebung zu schaffen, wurden folgende Punkte berücksichtigt:
 
 ### Physikalische Komponenten
 
@@ -151,19 +151,13 @@ Die beiden aufgenommenen Audiodateien („schleifen_kurz“ und „schleifen_lan
 
 ### Interaktive Komponenten
 
-**Greifen (Sandpapier/Script/sound_and_grab.cs):**  
-Das Greifen der Objekte wird über Raycasting und Mausklick realisiert.  
-- Beim Mausklick prüft ein Raycast, ob ein Papierobjekt selektiert wurde.
-- Bei erfolgreicher Selektion wird ein Flag gesetzt und die gewünschte Zielposition berechnet.
-- Während die Maustaste gehalten wird, folgt das Papierobjekt per `Rigidbody.MovePosition` der aktuellen Mausposition und bleibt dabei physikalisch korrekt eingebettet.
-
 ### Informationen über das Objekt (Sandpapier/Script/Sandpapier_info.cs)
 
-Um dem Anwender beim Testen der Materialien die Möglichkeit zu geben, die definierten Parameter des Papiers einzusehen, wurde den Objekten des ersten Blocks exemplarisch das Script `Sandpapier_info` zugewiesen. Dieses Script enthält den Informationstext zum jeweiligen Objekt.
+Um dem Anwender beim Testen der Materialien die Möglichkeit zu geben, die definierten Parameter des Papiers einzusehen, wurde dem ersten Objekten exemplarisch das Script `Sandpapier_info` zugewiesen. Dieses Script enthält den Informationstext zum jeweiligen Objekt (aus Zeitgründen konnte es nicht für alle umgesetzt werden).
 
 Ein leeres Canvas-Element wurde erstellt und mit einem UI-Textfeld ergänzt, in dem das Aussehen des Tooltips definiert wird. Dem Papierobjekt wird das Script sowie der zugehörige Infotext zugewiesen.
 
-Für die Interaktion wurde das XR Grab Interactable aktiviert. Um die physikalischen Eigenschaften nicht zu überschreiben und ein unnatürliches, schräges Stehen des Papiers zu verhindern, wurde der Movement Type auf „Velocity Tracking“ gesetzt.
+Für die Interaktion wurde das XR Grab Interactable aktiviert. Um die physikalischen Eigenschaften nicht zu überschreiben und ein unnatürliches, schräges Stehen des Papiers zu verhindern, wurde der Movement Type auf „Velocity Tracking“ gesetzt. Wird ein Papier geworfen, wirkt das herabsinken aller Papiere sehr realistisch.
 
 ---
 
@@ -175,17 +169,21 @@ Bei sehr einfacher Geometrie kann ein Foto oder eine fotorealistische Textur bes
 
 Im Gegensatz dazu nähern sich sehr komplexe Geometrien mit hoher Polygonanzahl dem realen Abbild eines Objekts am nächsten, da sie feinste Details in der Form abbilden können. In solchen Fällen ist oft eine einfache Farbgebung ausreichend, da die Geometrie selbst bereits die relevanten Details transportiert. 
 
+Es ist also immer ein gewisser Input notwendig um ein immersives Ergebnis zu erzielen. 100% Geometrie, kann auf komplexe Textur verzichten. Komplexe Textur wiederum auf detailierte Geometrie. Oder die beschriebene 50/50 Lösung (Low-Poly + Texture Baking Variante).
+
 ## Weiterentwicklung, Herausforderungen
 
 ### Weiterentwicklung
 
 - Für eine realistischere Schleifbewegung kann der lange Sound als Schleife abgespielt und beim Ende der Bewegung gestoppt werden. Aktuell läuft der Sound auch bei Berührung ohne Bewegung zu Ende, was nicht natürlich ist.
+- Sound bereits beim Greifen starten
 - Collider besser definieren, damit der Sound nicht bei "Nähe" ausgeführt wird.
 - Das Papier könnte sich leicht biegen beim hochheben.
 - Die Implementierung von Tooltips für alle Objekte ist vorgesehen, um die Informationsvermittlung weiter zu verbessern.
   
 ### Offene Punkte / Fehler
 - Einige Papiere sinken nach dem Werfen in den Tisch ein.
+- Der Tooltip könnte besser positioniert werden
 
 ### Besondere Herausforderungen
 
@@ -197,7 +195,7 @@ Da die Kameraposition der Brille von der Unity-Startposition abweicht, wurde der
 - **Glas:** X 2
 - **Metall und Holz:** X -6.7
 
-Diese Anpassungen waren notwendig, um für alle Teammitglieder die VR-Funktionalitäten testen zu können.
+Diese Anpassungen waren in der Endphase notwendig, um für alle Teammitglieder die VR-Funktionalitäten im Video-Call testen zu können.
 
 ---
 
