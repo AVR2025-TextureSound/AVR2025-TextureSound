@@ -1,6 +1,6 @@
 # Haptik- und Sounderstellung am Beispiel Metall
 
-##Übersicht
+## Übersicht
 Um die Wechselwirkung von Haptik und Klang am Beispiel von Metall zu untersuchen, wurden im Unity-Projekt TextureSound drei unterschiedliche Objekte erstellt: zwei Metallstangen – eine rostig und rau mit niedriger Smoothness, die andere glatt und glänzend mit hoher Smoothness – sowie eine spiegelnde Triangel mit maximaler Glätte. Um physikalische Interaktionen zu ermöglichen, wurden den Objekten Layer, Box Collider und Rigidbody-Komponenten zugewiesen. Beim Zusammenstoß lösen diese Komponenten spezifische Sounds aus. Dadurch soll die auditive Wahrnehmung angeregt und untersucht werden.
 
 
@@ -9,7 +9,7 @@ Um die Wechselwirkung von Haptik und Klang am Beispiel von Metall zu untersuchen
 - Export als `.fbx`-Dateien - diese sind von Unity lesbar und können dort dann weiter bearbeitet werden
 - Import in **Unity** und anschließender Ausrichtung, Skalierung und Materialzuweisung
 - Anwendung realistischer Texturen von [ambientCG.com](https://ambientcg.com/):
-  - **Base Map (Albedo) **, **Metallic Map (Roughness) **, **Normal Map**, **Height Map**
+  - **Base Map (Albedo)**, **Metallic Map (Roughness)**, **Normal Map**, **Height Map**
 
 
 | Objekt          | Oberfläche          | Smoothness | Layer        | Besonderheit                |
@@ -20,9 +20,9 @@ Um die Wechselwirkung von Haptik und Klang am Beispiel von Metall zu untersuchen
 | Triangelstick  | Spiegelnd, glatt    | 1.0        | Stick        | Klangobjekt, reflektierend  |
 
 
-##Spezifische Materialangaben: 
+## Spezifische Materialangaben: 
 ## Metallstange rostig: 
-[Metall 025] (https://ambientcg.com/view?id=Metal025)
+[Metall 025](https://ambientcg.com/view?id=Metal025)
 
 | Textur-Datei                   | Unity Slot              | Funktion/Vorteil                                                           |
 |-------------------------------|-------------------------|----------------------------------------------------------------------------|
@@ -34,7 +34,7 @@ Um die Wechselwirkung von Haptik und Klang am Beispiel von Metall zu untersuchen
 
 
 ### Metallstange (glatt)
-[Metall 049] (https://ambientcg.com/view?id=Metal049A)
+[Metall 049](https://ambientcg.com/view?id=Metal049A)
 
 | Textur-Datei                    | Unity Slot              | Funktion/Vorteil                                                           |
 |--------------------------------|-------------------------|----------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ Um die Wechselwirkung von Haptik und Klang am Beispiel von Metall zu untersuchen
 
 
 ### Triangel und Triangelstick
-[Metall 049] (https://ambientcg.com/view?id=Metal049A)
+[Metall 049](https://ambientcg.com/view?id=Metal049A)
 
 | Textur-Datei                    | Unity Slot              | Funktion/Vorteil                                                           |
 |--------------------------------|-------------------------|----------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ Diese Konfiguration sorgt für ein **stabiles und realistisches Verhalten** alle
 Alle interaktiven Objekte erhielten eine **XR Grab Interactable**-Komponente, um das **Greifen, Bewegen und Werfen** in VR zu ermöglichen.
 
 
-### 🖱️ Mouse Grab (Desktop-Modus)
+### Mouse Grab (Desktop-Modus)
 
 Da die **Meta Quest 3** nicht mit dem verwendeten Rechner verbunden werden konnte, wurde ein alternatives Eingabesystem per Maus eingerichtet.
 
