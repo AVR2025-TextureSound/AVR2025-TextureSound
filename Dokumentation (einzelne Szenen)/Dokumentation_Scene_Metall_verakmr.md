@@ -78,6 +78,8 @@ Bei Materialien wie Metall, das in der Realität meist relativ glatt ist und nur
 
 Diese Entscheidung ermöglichte es, die Subtilität der Haptik-Wahrnehmung auch in einem visuell und akustisch differenzierten VR-Szenario zu erforschen, ohne unrealistische Materialverzerrungen vorzunehmen.
 
+Zusätzlich wurde versucht, mittels Skripte eine Vibration am Controller auszulösen – beim Greifen, Berühren (Touch) und bei Kollisionen der Objekte. Die Haptik-Komponenten wie Haptic On Grab, Haptic On Touch und Vibration On Collision wurden integriert, konnten jedoch nicht vollständig getestet oder korrekt implementiert werden, da es während der Entwicklung zu Verbindungsproblemen zwischen der Meta Quest 2 und dem Laptop kam.
+
 
 ## Physikalische Interaktion und Steuerung
 
