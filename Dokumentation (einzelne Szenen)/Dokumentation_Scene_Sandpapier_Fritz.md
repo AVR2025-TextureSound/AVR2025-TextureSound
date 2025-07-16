@@ -1,6 +1,6 @@
-## Haptik am Beispiel Sandpapier
+## Haptik am Beispiel Sandpapier 
 
-Um eine Untersuchung der haptischen Wahrnehmung von Sandpapier zu ermöglichen, wurden drei unterschiedliche Objektgeometrien entwickelt:  
+Um eine Untersuchung der immersiven Wahrnehmung von Sandpapier zu ermöglichen, wurden drei unterschiedliche Objektgeometrien entwickelt:  
 - **Primitive Modellierung**  
 - **Polygonale Modellierung in Low-Poly (mit Reduktionen)**
 - **Polygonale Modellierung in High-Poly (mit Reduktionen)**
@@ -205,5 +205,5 @@ Diese Anpassungen waren in der Endphase notwendig, um für alle Teammitglieder d
 
 Die im Projekt eingesetzten Komponenten – bestehend aus unterschiedlichen Objektgeometrien, Texturen und Materialien, Soundelementen sowie UI-Skripten – bilden eine solide Grundlage für die wissenschaftliche Untersuchung haptischer Wahrnehmung in virtuellen Umgebungen. Für eine belastbare und praxisnahe Studie sollten jedoch alle Komponenten hinsichtlich Qualität, Funktionalität und Realismus weiter optimiert werden, um valide und übertragbare Ergebnisse zu erzielen.
 
-
+(Fritz: 106531)
 
